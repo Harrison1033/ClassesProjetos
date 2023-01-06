@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 //SerializationB1
-public class TerceiraClasse {
+public class Main{
     public static void main(String[] args) {
         SegundaClasse aluno = new SegundaClasse(2L, "Harry Mustang", "123412121");
         serializar(aluno);
