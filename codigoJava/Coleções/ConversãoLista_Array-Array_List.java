@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//ConversãoLista/Array-Array/List
+//ConversãoLista_Array-Array_List
 public class Main{
     public static void main(String[] args) {
         //De list para array
