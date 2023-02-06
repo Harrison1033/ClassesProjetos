@@ -2,7 +2,7 @@ package teste;
 
 import java.util.List;
 
-public class ClasseTres<T> {//O "T" representa o tipo(Type)
+public class ClasseTres<T> {//O "T" representa o tipo(Type)...
     private List<T>objetosDisponiveis;
 
     public ClasseTres(List<T> objetosDisponiveis) {
