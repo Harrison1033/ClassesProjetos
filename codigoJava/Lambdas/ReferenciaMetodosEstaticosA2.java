@@ -8,6 +8,9 @@ public class ClasseDois {
     public static int compareByEpisodes(ClasseUm a1, ClasseUm a2){
         return Integer.compare(a1.getEpisodes(),a2.getEpisodes());
     }
+	 public int compareByEpisodesNonStatic(ClasseUm a1, ClasseUm a2){
+        return Integer.compare(a1.getEpisodes(),a2.getEpisodes());
+    }
 }
 
 
