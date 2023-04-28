@@ -1,9 +1,9 @@
 public class MainUm {
     public static void main(String[] args) {
-        String sim = "Pago";
-        String nao = "Não Pago";
+        String yes = "Paid out";
+        String no = "I do not pay";
         double valor = 3000;
-        String resultado = valor > 5000 ? sim : nao;
-        System.out.println(resultado);
+        String result = valor > 5000 ? yes : no;
+        System.out.println(result);
     }
 }
