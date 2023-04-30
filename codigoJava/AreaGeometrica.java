@@ -8,23 +8,23 @@ public class TesteMain01 {
         Scanner scan = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
         double a, b, c;
-        double quadrado, circulo, trapezio, retangulo, triangulo;
-        System.out.println("Digite o valor de A: ");
+        double square, circle, trapeze, rectangle, triangle;
+        System.out.println("Enter the value of A: ");
         a = scan.nextDouble();
-        System.out.println("Digite o valor de B: ");
+        System.out.println("Enter the value of B: ");
         b = scan.nextDouble();
-        System.out.println("Digite o valor de C: ");
+        System.out.println("Enter the value of C: ");
         c = scan.nextDouble();
-        triangulo = (a * c)/2;
-        circulo = 3.14159 * Math.pow(c,2);
-        trapezio = ((a+b)*c)/2;
-        quadrado = b*b;
-        retangulo = a * b;
-        System.out.println("Triangulo: " + df.format(triangulo));
-        System.out.println("Circulo: " + df.format(circulo));
-        System.out.println("Trapezio: " + df.format(trapezio));
-        System.out.println("Quadrado: " + df.format(quadrado));
-        System.out.println("Retangulo: " + df.format(retangulo));
+        triangle = (a * c)/2;
+        circle = 3.14159 * Math.pow(c,2);
+        trapeze = ((a+b)*c)/2;
+        square = b*b;
+        rectangle = a * b;
+        System.out.println("Triangle: " + df.format(triangle));
+        System.out.println("Circle: " + df.format(circle));
+        System.out.println("Trapeze: " + df.format(trapeze));
+        System.out.println("Square: " + df.format(square));
+        System.out.println("Rectangle: " + df.format(rectangle));
 
     }
 }
