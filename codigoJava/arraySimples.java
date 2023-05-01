@@ -6,15 +6,15 @@ public class PrincipalTeste {
         //Arrays de tamanho n que imprime tudo no final
         Scanner scan = new Scanner(System.in);
         int num;
-        System.out.println("Digite o número de nomes: ");
+        System.out.println("Enter the number of names: ");
         num = Integer.parseInt(scan.nextLine());//Só deu certo com o Integer.parseInt
-        String[] nome = new String[num];
-        for (int i = 0; i < nome.length; i++) {
-            System.out.println("Digite o nome");
-            nome[i] = scan.nextLine();
+        String[] name = new String[num];
+        for (int i = 0; i < name.length; i++) {
+            System.out.println("Enter the name");
+            name[i] = scan.nextLine();
         }
-        for (String s : nome) {
-            System.out.println("Nome: " + s);
+        for (String s : name) {
+            System.out.println("Name: " + s);
         }
     }
 }
