@@ -8,50 +8,50 @@ import java.util.Iterator;
 public class MainClasse {
     public static void main(String[] args) {
 //Criando uma lista e adicionando 7 valores
-        List<Double> notas = new ArrayList<>();
-        notas.add(7d);
-        notas.add(3.5);
-        notas.add(8.6);
-        notas.add(4.6);
-        notas.add(6.3);
-        notas.add(1.8);
-        notas.add(4.4);
+        List<Double> notes = new ArrayList<>();
+        notes.add(7d);
+        notes.add(3.5);
+        notes.add(8.6);
+        notes.add(4.6);
+        notes.add(6.3);
+        notes.add(1.8);
+        notes.add(4.4);
         //Mostrar lista na ordem de inserção
-        System.out.println(notas);// ou System.out.println( notas.toString());
+        System.out.println(notes);// ou System.out.println( notes.toString());
         //Adicionar na lista a nota 8.0 na posição 4
-        notas.add(4,8.0);
-        System.out.println(notas);
+        notes.add(4,8.0);
+        System.out.println(notes);
         //Substituir 6.3 por 7.0
-        notas.set(notas.indexOf(6.3),7.0);//notas.indexOf() mostra a posição pelo valor dado
-        System.out.println(notas);
+        notes.set(notes.indexOf(6.3),7.0);//notes.indexOf() mostra a posição pelo valor dado
+        System.out.println(notes);
         //Conferir se a nota 1.8 está na lista
-        System.out.println(notas.contains(1.8));
+        System.out.println(notes.contains(1.8));
         //Exibir a somoa dos valores
-        Iterator<Double> iterator = notas.iterator();
-        Double soma = 0d;
+        Iterator<Double> iterator = notes.iterator();
+        Double sum = 0d;
         while (iterator.hasNext()){
             Double next = iterator.next();
-            soma += next;
+            sum += next;
         }
-        System.out.println(soma);
-        //Exibir a média das notas
-        System.out.println((soma/notas.size()));
+        System.out.println(sum);
+        //Exibir a média das notes
+        System.out.println((sum/notes.size()));
         //Exibir a terceira nota adicionada
-        System.out.println(notas.get(2));
+        System.out.println(notes.get(2));
         //Exibir a menor nota
-        System.out.println(Collections.min(notas));
+        System.out.println(Collections.min(notes));
         //Exibir a maior nota
-        System.out.println(Collections.max(notas));
+        System.out.println(Collections.max(notes));
         //Remover a nota 1.8
-        notas.remove(1.8);//se colocar o número inteiro ele procura pela posição
-        System.out.println(notas);
-        //Remover notas na posição 0;
-        notas.remove(0);
-        System.out.println(notas);
+        notes.remove(1.8);//se colocar o número inteiro ele procura pela posição
+        System.out.println(notes);
+        //Remover notes na posição 0;
+        notes.remove(0);
+        System.out.println(notes);
         //Apagar toda a lista
-        notas.clear();
-        System.out.println(notas);
+        notes.clear();
+        System.out.println(notes);
         //Conferir se a lista está vazia
-        System.out.println(notas.isEmpty());
+        System.out.println(notes.isEmpty());
     }
 }
