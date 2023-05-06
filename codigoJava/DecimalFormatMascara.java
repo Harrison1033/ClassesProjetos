@@ -5,8 +5,8 @@ public class MainClasse2 {
      double d = 1145.4;
 
         DecimalFormat decimalFormat = new DecimalFormat("00000.000");
-        String mascara = decimalFormat.format(d);
-        System.out.println(mascara);
+        String mask = decimalFormat.format(d);
+        System.out.println(mask);
 
     }
 }
