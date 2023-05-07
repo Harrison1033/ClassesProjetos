@@ -13,8 +13,8 @@ public class MainClasse2 {
         DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols( );
         decimalFormatSymbols.setDecimalSeparator('-');
         decimalFormat.setDecimalFormatSymbols(decimalFormatSymbols);
-        String mascara = decimalFormat.format(d);
-        System.out.println(mascara);
+        String mask = decimalFormat.format(d);
+        System.out.println(mask);
 
     }
 }
