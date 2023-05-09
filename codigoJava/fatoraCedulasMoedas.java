@@ -9,7 +9,7 @@ import java.util.Scanner;
 //   O arquivo de entrada contém um valor de ponto flutuante N (0 ≤ N ≤ 1000000.00).
 //   Saída
 //   Imprima a quantidade mínima de notes e coins necessárias para trocar o valor inicial, conforme exemplo fornecido.
-
+	public classe main{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double dinheiro = scan.nextDouble();
