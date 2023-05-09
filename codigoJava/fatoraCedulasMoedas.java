@@ -14,7 +14,7 @@ import java.util.Scanner;
         Scanner scan = new Scanner(System.in);
         double dinheiro = scan.nextDouble();
         int arredondar;
-        System.out.println("NOTAS:" );
+        System.out.println("NOTES:" );
         arredondar = (int)dinheiro/100;
         System.out.printf("%d nota(s) de R$ 100.00%n",arredondar);
         dinheiro %=  100;

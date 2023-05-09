@@ -1,7 +1,7 @@
 package br.com.harrison.principal;
 
 import java.util.Scanner;
-//Fatorando cédulas
+//Fatorando cédula
 public class TesteMain01 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
