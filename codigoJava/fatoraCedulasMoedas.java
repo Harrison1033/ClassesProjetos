@@ -12,57 +12,57 @@ import java.util.Scanner;
 	public classe main{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double dinheiro = scan.nextDouble();
-        int arredondar;
+        double money = scan.nextDouble(); 
+        int round;
         System.out.println("NOTES:" );
-        arredondar = (int)dinheiro/100;
-        System.out.printf("%d nota(s) de R$ 100.00%n",arredondar);
-        dinheiro %=  100;
+        round = (int)money/100;
+        System.out.printf("%d note(s) de R$ 100.00%n",round);
+        money %=  100;
 
-        arredondar = (int)dinheiro/50;
-        System.out.printf("%d nota(s) de R$ 50.00%n",arredondar);
-        dinheiro %=  50;
+        round = (int)money/50;
+        System.out.printf("%d note(s) de R$ 50.00%n",round);
+        money %=  50;
 
-        arredondar = (int)dinheiro/20;
-        System.out.printf("%d nota(s) de R$ 20.00%n",arredondar);
-        dinheiro %=  20;
+        round = (int)money/20;
+        System.out.printf("%d note(s) de R$ 20.00%n",round);
+        money %=  20;
 
-        arredondar = (int)dinheiro/10;
-        System.out.printf("%d nota(s) de R$ 10.00%n",arredondar);
-        dinheiro %=  10;
+        round = (int)money/10;
+        System.out.printf("%d note(s) de R$ 10.00%n",round);
+        money %=  10;
 
-        arredondar = (int)dinheiro/5;
-        System.out.printf("%d nota(s) de R$ 5.00%n",arredondar);
-        dinheiro %=  5;
+        round = (int)money/5;
+        System.out.printf("%d note(s) de R$ 5.00%n",round);
+        money %=  5;
 
-        arredondar = (int)dinheiro/2;
-        System.out.printf("%d nota(s) de R$ 2.00%n",arredondar);
-        dinheiro %=  2;
+        round = (int)money/2;
+        System.out.printf("%d note(s) de R$ 2.00%n",round);
+        money %=  2;
 
-        dinheiro = dinheiro * 100.0; //multipliqueir por 100 para nao trabalhar com casas decimais que no caso achei muito complicado
-        System.out.println("MOEDAS:");
-        arredondar = (int) (dinheiro / 100);
-        System.out.printf("%d moeda(s) de R$ 1.00%n",arredondar);
-        dinheiro %=  100;
+        money = money * 100.0; //multipliqueir por 100 para nao trabalhar com casas decimais que no caso achei muito complicado
+        System.out.println("COINS:");
+        round = (int) (money / 100);
+        System.out.printf("%d coin(s) de R$ 1.00%n",round);
+        money %=  100;
 
-        arredondar = (int) (dinheiro/50);
-        System.out.printf("%d moeda(s) de R$ 0.50%n",arredondar);
-        dinheiro %=  50;
+        round = (int) (money/50);
+        System.out.printf("%d coin(s) de R$ 0.50%n",round);
+        money %=  50;
 
-        arredondar = (int) (dinheiro/25);
-        System.out.printf("%d moeda(s) de R$ 0.25%n",arredondar);
-        dinheiro %=  25;
+        round = (int) (money/25);
+        System.out.printf("%d coin(s) de R$ 0.25%n",round);
+        money %=  25;
 
-        arredondar = (int) (dinheiro/10);
-        System.out.printf("%d moeda(s) de R$ 0.10%n",arredondar);
-        dinheiro %=  10;
+        round = (int) (money/10);
+        System.out.printf("%d coin(s) de R$ 0.10%n",round);
+        money %=  10;
 
-        arredondar = (int) (dinheiro/5);
-        System.out.printf("%d moeda(s) de R$ 0.05%n",arredondar);
-        dinheiro %=  5;
+        round = (int) (money/5);
+        System.out.printf("%d coin(s) de R$ 0.05%n",round);
+        money %=  5;
 
-        arredondar = (int) (dinheiro);
-        System.out.printf("%d moeda(s) de R$ 0.01%n", arredondar) ;
+        round = (int) (money);
+        System.out.printf("%d coin(s) de R$ 0.01%n", round) ;
 
     }
 }
