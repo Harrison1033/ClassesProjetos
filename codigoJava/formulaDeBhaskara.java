@@ -9,15 +9,15 @@ public class ClasseD {
     double c;
 
     public void imprimir(){
-        System.out.println("Digite o valor de A:");
+        System.out.println("Enter the value of A:");
         a = scan.nextDouble() ;
-        System.out.println("Digite o valor de B:");
+        System.out.println("Enter the value of B:");
         b = scan.nextDouble();
-        System.out.println("Digite o valor de C:");
+        System.out.println("Enter the value of C:");
         c = scan.nextDouble();
 
         if ((a == 0) | (b * b - 4 * a * c < 0)){
-            System.out.println("Impossivel calcular");
+            System.out.println("Impossible to calculate");
             return;
         }
         double raizQ = Math.sqrt((b * b) - 4 * a * c);
