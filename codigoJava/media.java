@@ -1,32 +1,32 @@
-//Nota e Média usando o for
+//note e Média usando o for
 
 package br.com.harrison.classe;
 
 import java.util.Scanner;
 
-public class TesteQuatro {
+public class Avarage {
     Scanner scan = new Scanner(System.in);
-    public double nota;
-    public double incremento;
-    public  double media;
+    public double note;
+    public double increment;
+    public  double average;
 
-    public void imprimir(){
+    public void print(){
         for (int i = 0; i < 3; i++){
-            System.out.println("Digite a nota " + (i + 1));
-            nota = scan.nextDouble();
-            incremento += nota;
+            System.out.println("Type the note " + (i + 1));
+            note = scan.nextDouble();
+            increment += note;
         }
-        media = incremento / 3;
-        System.out.print("Nota: ");
-        System.out.printf("%.2f", media);
-        if (media >= 0 && media < 5){
-            System.out.println("\nREPROVADO:");
-        }else if (media >= 5 && media < 6){
-            System.out.println("\nRECUPERAÇÃO");
-        }else if (media >= 6 && media <= 10 ){
-            System.out.println("\nAPROVADO, PARABÉNS:");
+        average = increment / 3;
+        System.out.print("Note: ");
+        System.out.printf("%.2f", average);
+        if (average >= 0 && average < 5){
+            System.out.println("\nDISAPPROVED:");
+        }else if (average >= 5 && average < 6){
+            System.out.println("\nRECOVERY");
+        }else if (average >= 6 && average <= 10 ){
+            System.out.println("\nAPPROVATE, CONGRATULATIONS:");
         }else {
-            System.out.println("\nNota Inválida:");
+            System.out.println("\nInvalid Note:");
         }
     }
 }
