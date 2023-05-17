@@ -2,28 +2,28 @@ package br.com.harrison.classe;
 
 import java.util.Scanner;
 
-public class TesteQuatro {
+public class SmallestBiggest {
     public static void main(String[] args) {
-        final int NUMEROS_A_LER;
+        final int NUMBERS_TO_READ;
         Scanner scan = new Scanner(System.in);
-        int minimo = Integer.MAX_VALUE;
-        int maximo = Integer.MIN_VALUE;
+        int minimum = Integer.MAX_VALUE;
+        int maximum = Integer.MIN_VALUE;
 
-        System.out.println("Digite o número de valores a serem digitados");
-        NUMEROS_A_LER = scan.nextInt();
+        System.out.println("Enter the number of values ​​to enter");
+        NUMBERS_TO_READ = scan.nextInt();
 
-        for (int i = 0; i < NUMEROS_A_LER; i++) {
-            System.out.println("Entre com o proximo inteiro: ");
+        for (int i = 0; i < NUMBERS_TO_READ; i++) {
+            System.out.println("Enter the next integer: ");
             int num = scan.nextInt();
-            if (num < minimo) {
-                minimo = num;
+            if (num < minimum) {
+                minimum = num;
             }
-            if (num > maximo) {
-                maximo = num;
+            if (num > maximum) {
+                maximum = num;
             }
         }
 
-        System.out.println("O menor numero é: " + minimo);
-        System.out.println("O maior numero é: " + maximo);
+        System.out.println("The smallest number is: " + minimum);
+        System.out.println("The biggest number is: " + maximum);
     }
 }
