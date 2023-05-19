@@ -5,12 +5,12 @@ public class TesteDois {
     Scanner scan = new Scanner(System.in);
     
     public void imprimir(){
-        System.out.println("Digite um número: ");
-        int numero = scan.nextInt();
-        if (numero % 2 == 0){
-            System.out.println("O número: " + numero + " é par");
+        System.out.println("Enter a number: ");
+        int number = scan.nextInt();
+        if (number % 2 == 0){
+            System.out.println("The number: " + number + " is pair");
         }else {
-            System.out.println("O número: " + numero + " é Ímpar");
+            System.out.println("The number: " + number + " is odd");
         }
 
     }
