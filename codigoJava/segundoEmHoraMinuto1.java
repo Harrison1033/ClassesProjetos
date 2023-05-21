@@ -1,20 +1,20 @@
 package br.com.harrison.principal;
 
 import java.util.Scanner;
-//convertendo segundos em horas minutos e segundos
-public class TesteMain01 {
+//convertendo seconds em horas minutos e seconds
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Digite o tenpo em segundos:");
-        int segundos = scan.nextInt();
+        System.out.println("Enter time in seconds:");
+        int seconds = scan.nextInt();
 
-        int qtdHoras = segundos / 3600;
-        segundos %= 3600;
-        int qtdMinutos = segundos / 60;
-        segundos %= 60;
-        int qtdSegundos = segundos;
+        int qtdHours = seconds / 3600;
+        seconds %= 3600;
+        int qtdMinuts = seconds / 60;
+        seconds %= 60;
+        int qtdSeconds = seconds;
 
-        System.out.printf("%d:%d:%d%n", qtdHoras, qtdMinutos, qtdSegundos);
+        System.out.printf("%d:%d:%d%n", qtdHours, qtdMinuts, qtdSeconds);
 
     }
 }
