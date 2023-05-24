@@ -1,10 +1,10 @@
 package estudando.classe1;
 
 public class VarArgs {
-    public static void imprime(String...textos) {
+    public static void prints(String...texts) {
 	
-        for (String texto : textos) {
-            System.out.print(texto + ", ");
+        for (String text : texts) {
+            System.out.print(text + ", ");
         }
     }
 }
