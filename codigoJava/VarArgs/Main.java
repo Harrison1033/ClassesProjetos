@@ -3,9 +3,9 @@ package estudando.classe1;
 public class Main extends VarArgs {
     public static void main(String[] args) {
 	
-    imprime("a");
-    imprime("b","c");
-    imprime();
-    imprime("d","e","f");
+    prints("a");
+    prints("b","c");
+    prints();
+    prints("d","e","f");
     }
 }
