@@ -2,16 +2,16 @@ package bk.com.harrison.classes;
 
 import java.util.Scanner;
 
-public class ClasseA1 {
+public class Sum {
     Scanner scan = new Scanner(System.in);
-    double numero;
+    double number;
     double cont = 0;
 
-    public void imprimir(){
-        System.out.println("Digite um número para Tabuada de somar: ");
-        numero = scan.nextDouble();
+    public void printOut(){
+        System.out.println("Enter a number for the sum table: ");
+        number = scan.nextDouble();
         while (cont <= 10){
-            System.out.println(numero +" + "+ cont +" = "+ (numero + cont));
+            System.out.println(number +" + "+ cont +" = "+ (number + cont));
             cont ++;
         }
 
