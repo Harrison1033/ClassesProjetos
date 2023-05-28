@@ -2,16 +2,16 @@ package bk.com.harrison.classes;
 
 import java.util.Scanner;
 
-public class ClasseA3 {
+public class multiplication {
     Scanner scan = new Scanner(System.in);
-    double numero;
+    double number;
     double cont = 1;
 
-    public void imprimir(){
-        System.out.println("Digite um número para a tebuada de multiplicação");
-        numero = scan.nextDouble();
+    public void printOut(){
+        System.out.println("Enter a number for the multiplication table");
+        number = scan.nextDouble();
         while (cont <= 10 ){
-            System.out.println(numero +" X "+ cont +" = "+ (numero * cont));
+            System.out.println(number +" X "+ cont +" = "+ (number * cont));
             cont ++;
         }
     }
