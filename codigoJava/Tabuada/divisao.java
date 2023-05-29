@@ -2,16 +2,16 @@ package bk.com.harrison.classes;
 
 import java.util.Scanner;
 
-public class ClasseA4 {
+public class Division {
     Scanner scan = new Scanner(System.in);
-    double numero;
+    double number;
     double cont = 1;
 
-    public void imprimir(){
-        System.out.println("Digite um número para a tabuada de Divisão: ");
-        numero = scan.nextDouble();
+    public void printOut(){
+        System.out.println("Enter a number for the division teble: ");
+        number = scan.nextDouble();
         while (cont <= 10){
-            System.out.println(numero +" % "+ cont +" = "+ (numero / cont));
+            System.out.println(number +" % "+ cont +" = "+ (number / cont));
             cont ++;
         }
     }
