@@ -14,7 +14,6 @@ public class ClasseUm {
             new ClasseQuatro("Kumo Desuga", 1.99),
             new ClasseQuatro("Monogatori", 4.00)
     ));
-
     public static void main(String[] args) {
         lightNovels.stream()
                 .map(ClasseQuatro::getPrice)
