@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 //import java.util.stream.Stream;
 
 //StreamFlatMapP2
-public class MainUm {//Mostra as letras de todas as palavras
+public class MainUm {//Mostra as letras de todas as palavras (String)
 
     public static void main(String[] args) {
         List<String> words = List.of("Gomu", "Gomu", "No", "Mi");
