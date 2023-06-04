@@ -2,50 +2,50 @@ package primeiroProjeto;
 
 import java.util.Scanner;
 
-public class ClasseAb extends ClasseAa{//forma de pagamento
+public class ClasseAb extends ClasseAa{//forma de payment
 	Scanner scan = new Scanner(System.in);
 	ClasseAa classeAa = new ClasseAa();
-	protected int pagamento;
-	protected int parcelas;
-	protected double resultadoFinal;
+	protected int payment;
+	protected int installments;
+	protected double finalResult;
 	
 	
 	public void imprimir() {
 		classeAa.imprimir();
-		System.out.println("Digite a forma de pagamento: ");
-		System.out.println("(1) Dinheiro\n(2) Débito\n(3) Crédito");
-		pagamento = scan.nextInt();
+		System.out.println("Enter payment method: ");
+		System.out.println("(1) Money\n(2) Debit\n(3) Credit");
+		payment = scan.nextInt();
 				
-		switch(pagamento) {
+		switch(payment) {
 		case 1:
-			resultadoFinal = classeAa.resultado - (classeAa.resultado * 0.1);
-			System.out.printf("A vista: R$ %.2f", resultadoFinal);break;
+			finalResult = classeAa.resultado - (classeAa.resultado * 0.1);
+			System.out.printf("A vista: R$ %.2f", finalResult);break;
 		case 2:
-			resultadoFinal = classeAa.resultado - (classeAa.resultado* 0.05);
-			System.out.printf("No carão de débito: R$ %.2f", resultadoFinal);break;
+			finalResult = classeAa.resultado - (classeAa.resultado* 0.05);
+			System.out.printf("On debit card: R$ %.2f", finalResult);break;
 		case 3:
-			System.out.println("Escolha a opção de Parcelas:\n(1) De 1 a 5 parcelas");
-			System.out.println("(2) De 6 a 10 parcelas\n(3) Acima de 10 parcelas");
-			parcelas = scan.nextInt();
-			if(parcelas > 0 && parcelas <= 5) {
-				resultadoFinal = classeAa.resultado - (classeAa.resultado* 0.03);
-				System.out.printf("No cartão de crédito: R$ %.2f", resultadoFinal);
-				resultadoFinal = resultadoFinal / parcelas;
-				System.out.printf("\nEm %d Parcelas Ficará: R$ %.2f a parcela", parcelas, resultadoFinal);
-			}else if(parcelas > 5 && parcelas <= 10) {
-				resultadoFinal = classeAa.resultado;
-				System.out.printf("No cartão de crédito: R$ %.2f", resultadoFinal);
-				resultadoFinal = resultadoFinal / parcelas;
-				System.out.printf("\nEm %d Parcelas Ficará: R$ %.2f a parcela", parcelas, resultadoFinal);
-			}else if(parcelas > 10) {
-				resultadoFinal = classeAa.resultado + (classeAa.resultado * 0.05);
-				System.out.printf("No cartão de crédito: R$ %.2f", resultadoFinal);
-				resultadoFinal = resultadoFinal / parcelas;
-				System.out.printf("\nEm %d Parcelas Ficará: R$ %.2f a parcela", parcelas, resultadoFinal);
+			System.out.println("Choose installment option:\n(1) from 1 to 5 installments");
+			System.out.println("(2) From 6 to 10 installments\n(3) Above 10 installments");
+			installments = scan.nextInt();
+			if(installments > 0 && installments <= 5) {
+				finalResult = classeAa.resultado - (classeAa.result* 0.03);
+				System.out.printf("On credit card: R$ %.2f", finalResult);
+				finalResult = finalResult / installments;
+				System.out.printf("\nEm %d installments will remain: R$ %.2f the parcel", installments, finalResult);
+			}else if(installments > 5 && installments <= 10) {
+				finalResult = classeAa.result;
+				System.out.printf("On credit card: R$ %.2f", finalResult);
+				finalResult = finalResult / installments;
+				System.out.printf("\nEm %d installments will remain: R$ %.2f the parcel", installments, finalResult);
+			}else if(installments > 10) {
+				finalResult = classeAa.resultado + (classeAa.resultado * 0.05);
+				System.out.printf("On credit card: R$ %.2f", finalResult);
+				finalResult = finalResult / installments;
+				System.out.printf("\nEm %d installments will remain: R$ %.2f the parcel", installments, finalResult);
 			}
 			break;
 		default:
-			System.out.println("Opção Inválida");
+			System.out.println("Invalid option");
 		
 			}
 		
