@@ -10,15 +10,15 @@ public class Principal {
 			boolean continua = true;
 			int opcao;
 			while(continua == true) {//resolver o problema abaixo
-			segundo.imprimir();//quando reinicia o processo o valor não retorna a zero
-			System.out.println("Gostaria de reiniciar o processo?\n(1) Sim\n(2) Não");
+			segundo.printOut();//quando reinicia o processo o valor não retorna a zero
+			System.out.println("Would you like to restarte the process?\n(1) Yes\n(2) No");
 			opcao = scan.nextInt();
 			if(opcao == 1) {
 				continua = true;
 			}else if(opcao == 2) {
 				continua = false;
 			}else {
-				System.out.println("Opção Inválida:");
+				System.out.println("Invalid option:");
 			}
 				
 			}
