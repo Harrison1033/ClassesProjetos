@@ -1,16 +1,16 @@
 package projetoMercado.classes;
 
-public class Produtos {
-    protected String nome;
-    protected int codigo;
-    protected double valor = 0;
+public class Products {
+    protected String name;
+    protected int code;
+    protected double value = 0;
 
-    public Produtos(String nome, int codigo, double valor) {
-        this.nome = nome;
-        this.codigo = codigo;
-        this.valor = valor;
+    public Products(String name, int code, double value) {
+        this.name = name;
+        this.code = code;
+        this.value = value;
     }
-    public Produtos(double valor) {
-        this.valor = valor;
+    public Produtos(double value) {
+        this.value = value;
     }
 }
