@@ -2,24 +2,24 @@ package projetoMercado.classes;
 
 import java.util.Scanner;
 
-public class Parcelas extends CreditoCartao{
+public class Installments extends CreditoCartao{
     Scanner scan = new Scanner(System.in);
-    int parcelas;
+    int installments;
     double total;
-    public Parcelas(double valor) {
-        super(valor);
+    public Installments(double value) {
+        super(value);
     }
-    public void parcelasCalc(){
-        System.out.println("Digite o número de parcelas até 12X ");
-        parcelas = scan.nextInt();
-        if (parcelas > 0 && parcelas <= 4){
-           total = parcelas - (parcelas * 0.1);
-        }else if (parcelas > 4 && parcelas <= 8){
-            total = parcelas - (parcelas * 0.05);
-        }else if (parcelas > 8 && parcelas <= 12){
-            total = parcelas + (parcelas * 0.05 );
+    public void installmentsCalc(){
+        System.out.println("Enter the number of installments up to 12X ");
+        installments = scan.nextInt();
+        if (installments > 0 && installments <= 4){
+           total = installments - (installments * 0.1);
+        }else if (installments > 4 && installments <= 8){
+            total = installments - (installments * 0.05);
+        }else if (installments > 8 && installments <= 12){
+            total = installments + (installments * 0.05 );
         }else {
-            System.out.println("Permitido só até 12 Parcelas: ");
+            System.out.println("Only allowed up to 12 installments: ");
         }
     }
 }
