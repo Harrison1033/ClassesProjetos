@@ -19,7 +19,7 @@ public class Installments extends CreditoCartao{
         }else if (installments > 8 && installments <= 12){
             total = installments + (installments * 0.05 );
         }else {
-            System.out.println("Only allowed up to 12 installments: ");
+            System.out.println("Only allowed up to 12 installments:  ");
         }
     }
 }
