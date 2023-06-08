@@ -4,27 +4,27 @@ import java.util.Scanner;
 
 public class FormaPagamento extends CalculaValores{
     Scanner scan = new Scanner(System.in);
-    Especie especie = new Especie(0);
-    DebitoCartao debitoCartao = new DebitoCartao(0);
-    CreditoCartao creditoCartao = new CreditoCartao(0);
-    int opcao;
+    Money money = new Money(0);
+    DebitCard debitCard = new DebitCard(0);
+    CreditCard creditCard = new CreditCard(0);
+    int option;
 
-    public FormaPagamento(double valor) {
-        super(valor);
+    public FormaPagamento(double value) {
+        super(value);
     }
 
-    public void fPagamento(){
-        System.out.println("Qual a forma de pagamento? ");
-        System.out.println("(1) em espécie\n(2) cartão débito\n(3) cartão crédito");
+    public void fPayment(){
+        System.out.println("What id the payment method? ");
+        System.out.println("(1) money\n(2) debit card\n(3) credit card");
         opcao = scan.nextInt();
-        if (opcao == 1){
-            especie.especieCalc();
-        }else if (opcao == 2){
-            debitoCartao.debitoCalc();
-        }else if (opcao == 3){
-            creditoCartao.creditoCalc();
+        if (option == 1){
+            money.moneyCalc();
+        }else if (option == 2){
+            debitCard.debitCalc();
+        }else if (option == 3){
+            creditCard.creditCalc();
         }else {
-            System.out.println("Opção inválida: ");
+            System.out.println("Invalid Option: ");
         }
 
     }
