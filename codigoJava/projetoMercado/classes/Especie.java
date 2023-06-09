@@ -1,18 +1,18 @@
 package projetoMercado.classes;
 
-public class Especie extends FormaPagamento {
-    double especie;
+public class Money extends FormaPagamento {
+    double money;
 
-    public Especie(double valor) {
-        super(valor);
+    public Money(double value) {
+        super(value);
     }
 
-    public void especieCalc(){
-    if (valor > 0 && opcao == 1){
-        especie = valor + (valor * 0.1);
-        System.out.println("O valor final é: " + especie);
+    public void moneyCalc(){
+    if (value > 0 && option == 1){
+        money = value + (value * 0.1);
+        System.out.println("The final value is: " + money);
     }else {
-        System.out.println("Vaolor inválido: ");
+        System.out.println("Invalid value: ");
     }
 }
 }
