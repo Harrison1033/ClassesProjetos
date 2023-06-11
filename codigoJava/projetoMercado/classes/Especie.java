@@ -1,6 +1,6 @@
 package projetoMercado.classes;
 
-public class Money extends FormaPagamento {
+public class Money extends PymentMethod {
     double money;
 
     public Money(double value) {

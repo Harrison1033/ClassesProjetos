@@ -1,16 +1,16 @@
 package projetoMercado.classes;
 
-public class DebitoCartao extends FormaPagamento{
+public class DebitCard extends PymentMethod{
     double debito ;
-    public DebitoCartao(double valor) {
-        super(valor);
+    public DebitCard(double value) {
+        super(value);
     }
-    public void debitoCalc(){
-        if (valor > 0 && opcao == 2){
-            debito = opcao +( opcao * 0.05);
-            System.out.println("O valor no débito será: " + debito);
+    public void debitCalc(){
+        if (value > 0 && option == 2){
+            debito = option +( option * 0.05);
+            System.out.println("The debit amount will be: " + debito);
         }else {
-            System.out.println("Valor inválido: ");
+            System.out.println("Invalid value: ");
         }
     }
 }

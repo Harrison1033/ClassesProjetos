@@ -2,14 +2,14 @@ package projetoMercado.classes;
 
 import java.util.Scanner;
 
-public class FormaPagamento extends CalculaValores{
+public class PymentMethod extends CalculaValores{
     Scanner scan = new Scanner(System.in);
     Money money = new Money(0);
     DebitCard debitCard = new DebitCard(0);
     CreditCard creditCard = new CreditCard(0);
     int option;
 
-    public FormaPagamento(double value) {
+    public PymentMethod(double value) {
         super(value);
     }
 
