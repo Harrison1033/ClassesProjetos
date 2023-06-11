@@ -1,15 +1,15 @@
 package projetoMercado.classes;
 
-public class CreditoCartao extends FormaPagamento {
-    Parcelas parcelas = new Parcelas(0);
+public class CreditCard extends PymentMethod {
+    Installments installmentes = new Installments(0);
 
 
-    public CreditoCartao(double valor) {
-        super(valor);
+    public CreditCard(double value) {
+        super(value);
     }
-    public void creditoCalc(){
-        if (valor > 0 && opcao == 3){
-            parcelas.parcelasCalc();
+    public void creditCalc(){
+        if (value > 0 && option == 3){
+            installmentes.installmentesCalc();
         }
     }
 }
