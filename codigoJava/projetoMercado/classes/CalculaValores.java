@@ -2,22 +2,22 @@ package projetoMercado.classes;
 
 import java.util.Scanner;
 
-public class CalculaValores extends Produtos{
+public class CalculateValues extends Products{
     Scanner scan = new Scanner(System.in);
     double item = 0;
-    int opcao;
-    public CalculaValores( double valor) {
-        super( valor);
+    int option;
+    public CalculateValues( double value) {
+        super( value);
     }
-    public void calcular(){
+    public void calculate(){
         //continuara o código
-        while (opcao != 3 ){
-            System.out.println("Digite o valor do produto: ");
+        while (option != 3 ){
+            System.out.println("Enter the product value: ");
             item = scan.nextDouble();
-            valor = valor + item;
-            System.out.println("Quer adicionar um produto?\nDigite 3 para finalizar: ");
-            opcao = scan.nextInt();
+            value = value + item;
+            System.out.println("Want to add a product?\nType 3 to finish: ");
+            option = scan.nextInt();
         }
-        System.out.println("O valor final é: " + valor);
+        System.out.println("The final value is: " + value);
     }
 }

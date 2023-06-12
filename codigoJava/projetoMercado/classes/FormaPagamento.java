@@ -2,7 +2,7 @@ package projetoMercado.classes;
 
 import java.util.Scanner;
 
-public class PymentMethod extends CalculaValores{
+public class PymentMethod extends CalculateValues{
     Scanner scan = new Scanner(System.in);
     Money money = new Money(0);
     DebitCard debitCard = new DebitCard(0);
