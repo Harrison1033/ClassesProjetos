@@ -4,7 +4,7 @@ import projetoMercado.classes.CalculaValores;
 
 public class principal {
     public static void main(String[] args) {
-        CalculaValores calculaValores = new CalculaValores(0);
-        calculaValores.calcular();
+        CalculateValues calculateValues = new CalculateValuesValores(0);
+        calculateValues.calculate();
     }
 }
