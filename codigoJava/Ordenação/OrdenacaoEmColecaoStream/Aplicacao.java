@@ -4,7 +4,7 @@ import java.util.*;
 public class QuartaClasse {
 
     public static void main(String[] args) {
-        System.out.println("--\tOrdem aleatória\t--");
+        System.out.println("--\tRandom order\t--");
         Map<Integer, TerceiraClasse> agenda = new HashMap<>() {{
             put(1, new TerceiraClasse("Simba", 5555));
             put(4, new TerceiraClasse("Cami", 1111));
@@ -12,7 +12,7 @@ public class QuartaClasse {
         }};
         System.out.println(agenda);
         for (Map.Entry<Integer, TerceiraClasse> entry: agenda.entrySet()) {
-            System.out.println(entry.getKey() + " - " + entry.getValue().getNome());
+            System.out.println(entry.getKey() + " - " + entry.getValue().getName());
         }
 		//Classe anônima
 //        Set<Map.Entry<Integer, TerceiraClasse>> set = new TreeSet<>(new Comparator<Map.Entry<Integer, TerceiraClasse>>() {
@@ -44,10 +44,10 @@ public class QuartaClasse {
         //------------------------------------------------------------------------------------------------------------
         //Lambda
         Set<Map.Entry<Integer, TerceiraClasse>> set = new TreeSet<Map.Entry<Integer, TerceiraClasse>>(
-                Comparator.comparing(cont -> cont.getValue().getNumero()));
+                Comparator.comparing(cont -> cont.getValue().getNumber()));
 
         set.addAll(agenda.entrySet());
         for (Map.Entry<Integer, TerceiraClasse> entry: set) {
-            System.out.println(entry.getKey() + " - " + entry.getValue().getNumero() +
-                    ": " +entry.getValue().getNome());
+            System.out.println(entry.getKey() + " - " + entry.getValue().getNumber() +
+                    ": " +entry.getValue().getName());
         }
