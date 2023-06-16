@@ -3,40 +3,40 @@ package estudando.classe1;
 import java.util.Objects;
 
 public class TerceiraClasse {
-    private String nome;
-    private Integer numero;
+    private String name;
+    private Integer number;
 
-    public TerceiraClasse(String nome, Integer numero) {
-        this.nome = nome;
-        this.numero = numero;
+    public TerceiraClasse(String name, Integer number) {
+        this.name = name;
+        this.number = number;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public Integer getNumero() {
-        return numero;
+    public Integer getNumber() {
+        return number;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TerceiraClasse contato = (TerceiraClasse) o;
-        return nome.equals(contato.nome) && numero.equals(contato.numero);
+        TerceiraClasse contact = (TerceiraClasse) o;
+        return name.equals(contact.name) && number.equals(contact.number);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, numero);
+        return Objects.hash(name, number);
     }
 
     @Override
     public String toString() {
-        return "Contato{" +
-                "nome='" + nome + '\'' +
-                ", numero='" + numero + '\'' +
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", number='" + number + '\'' +
                 '}';
     }
 }
