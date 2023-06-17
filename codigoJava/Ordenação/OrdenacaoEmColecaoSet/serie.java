@@ -3,34 +3,34 @@ package estudando.classe1;
 import java.util.Objects;
 
 public class QuartaClasse implements Comparable<QuartaClasse>{
-    private String nome;
-    private String genero;
-    private Integer tempoEpisodio;
+    private String name;
+    private String gender;
+    private Integer episodeTime;
 
-    public QuartaClasse(String nome, String genero, Integer tempoEpisodio) {
-        this.nome = nome;
-        this.genero = genero;
-        this.tempoEpisodio = tempoEpisodio;
+    public QuartaClasse(String name, String gender, Integer episodeTime) {
+        this.name = name;
+        this.gender = gender;
+        this.episodeTime = episodeTime;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getGender() {
+        return gender;
     }
 
-    public Integer getTempoEpisodio() {
-        return tempoEpisodio;
+    public Integer getEpisodeTime() {
+        return episodeTime;
     }
 
     @Override
     public String toString() {
         return "{" +
-                "nome='" + nome + '\'' +
-                ", genero='" + genero + '\'' +
-                ", tempoEpisodio=" + tempoEpisodio +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", episodeTime=" + episodeTime +
                 '}';
     }
 
@@ -39,18 +39,18 @@ public class QuartaClasse implements Comparable<QuartaClasse>{
         if (this == o) return true;
         if (!(o instanceof QuartaClasse)) return false;
         QuartaClasse that = (QuartaClasse) o;
-        return getNome().equals(that.getNome()) && getGenero().equals(that.getGenero()) && getTempoEpisodio().equals(that.getTempoEpisodio());
+        return getName().equals(that.getName()) && getGender().equals(that.getGender()) && getEpisodeTime().equals(that.getEpisodeTime());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNome(), getGenero(), getTempoEpisodio());
+        return Objects.hash(getName(), getGender(), getEpisodeTime());
     }
 
     @Override
     public int compareTo(QuartaClasse serie) {
-        int tempoEpisodio = Integer.compare(this.getTempoEpisodio(),serie.getTempoEpisodio());
-       if (tempoEpisodio != 0) return tempoEpisodio;
-        return this.getGenero().compareTo(serie.getGenero());
+        int episodeTime = Integer.compare(this.getEpisodeTime(),serie.getEpisodeTime());
+       if (episodeTime != 0) return episodeTime;
+        return this.getGender().compareTo(serie.getGender());
     }
 }
