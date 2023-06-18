@@ -7,11 +7,11 @@ public class PrimeiraClasse implements Comparator<QuartaClasse> {
 
     @Override
     public int compare(QuartaClasse s1, QuartaClasse s2) {
-        int nome = s1.getNome().compareTo(s2.getNome());
-        if (nome != 0) return nome;
+        int name = s1.getName().compareTo(s2.getName());
+        if (name != 0) return name;
 
-        int genero = s1.getGenero().compareTo(s2.getGenero());
-        if (genero != 0) return genero;
+        int gender = s1.getGender().compareTo(s2.getGender());
+        if (gender != 0) return gender;
 
         return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
     }
