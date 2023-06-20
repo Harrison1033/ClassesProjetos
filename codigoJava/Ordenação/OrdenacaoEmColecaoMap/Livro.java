@@ -3,19 +3,19 @@ package estudando.classe1;
 import java.util.Objects;
 
 public class PrimeiraClasse  {
-    private String nome;
-    private Integer paginas;
+    private String name;
+    private Integer pages;
 
-    public PrimeiraClasse(String nome, Integer paginas) {
-        this.nome = nome;
-        this.paginas = paginas;
+    public PrimeiraClasse(String name, Integer pages) {
+        this.name = name;
+        this.pages = pages;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public Integer getPaginas() {
+    public Integer getPages() {
         return paginas;
     }
 
@@ -24,19 +24,19 @@ public class PrimeiraClasse  {
         if (this == o) return true;
         if (!(o instanceof PrimeiraClasse)) return false;
         PrimeiraClasse that = (PrimeiraClasse) o;
-        return getNome().equals(that.getNome()) && getPaginas().equals(that.getPaginas());
+        return getName().equals(that.getName()) && getPages().equals(that.getPages());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNome(), getPaginas());
+        return Objects.hash(getName(), getPages());
     }
 
     @Override
     public String toString() {
-        return "Livro{" +
-                "nome='" + nome + '\'' +
-                ", paginas=" + paginas +
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", pages=" + pages +
                 '}';
     }
 }
