@@ -6,6 +6,6 @@ public class SegundaClasse implements Comparator<TerceiraClasse> {
 
     @Override
     public int compare(TerceiraClasse g1, TerceiraClasse g2) {
-        return Integer.compare(g1.getIdade(),g2.getIdade() );
+        return Integer.compare(g1.getAge(),g2.getAge() );
     }
 }
