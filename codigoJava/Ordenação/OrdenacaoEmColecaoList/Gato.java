@@ -1,40 +1,40 @@
 package estudando.classe1;
 
 public class TerceiraClasse implements Comparable<TerceiraClasse> {
-    private String nome;
-    private Integer idade;
-    private String cor;
+    private String name;
+    private Integer age;
+    private String color;
 
-    public TerceiraClasse(String nome, Integer idade, String cor) {
-        this.nome = nome;
-        this.idade = idade;
-        this.cor = cor;
+    public TerceiraClasse(String name, Integer age, String color) {
+        this.name = name;
+        this.age = age;
+        this.color = color;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public Integer getIdade() {
-        return idade;
+    public Integer getAge() {
+        return age;
     }
 
-    public String getCor() {
-        return cor;
+    public String getColor() {
+        return color;
     }
 
     @Override
     public String toString() {
         return "{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", cor='" + cor + '\'' +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
                 '}';
     }
 
     @Override
     public int compareTo(TerceiraClasse terceiraClasse) {
-        return this.getNome().compareToIgnoreCase(terceiraClasse.getNome());
+        return this.getName().compareToIgnoreCase(terceiraClasse.getName());
 
     }
 }
