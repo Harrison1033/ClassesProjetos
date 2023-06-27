@@ -16,30 +16,30 @@ import java.util.List;
  */
 public class MainClasse2 {
     public static void main(String[] args) {
-        PrimeiraClasse cor = new PrimeiraClasse();
-        SegundaClasse idade = new SegundaClasse();
-        QuartaClasse tudo = new QuartaClasse();
-        List<TerceiraClasse> meusGatos = new ArrayList<>(){{
+        PrimeiraClasse color = new PrimeiraClasse();
+        SegundaClasse age = new SegundaClasse();
+        QuartaClasse all = new QuartaClasse();
+        List<TerceiraClasse> myCats = new ArrayList<>(){{
             add(new TerceiraClasse("Jon",18,"Preto"));
             add(new TerceiraClasse("Simba",6,"Tigrado"));
             add(new TerceiraClasse("Jon", 12,"Amarelo"));
         }};
-        System.out.println(meusGatos);//Ordem de inserção
+        System.out.println(myCats);//Ordem de inserção
         //ordem aleatória
-        Collections.shuffle(meusGatos);
-        System.out.println(meusGatos);
+        Collections.shuffle(myCats);
+        System.out.println(myCats);
         //Ordem natural
-        Collections.sort(meusGatos);
-        System.out.println(meusGatos);
+        Collections.sort(myCats);
+        System.out.println(myCats);
         //Ordem por idade
-        meusGatos.sort(new SegundaClasse());
-        System.out.println(meusGatos);
+        myCats.sort(new SegundaClasse());
+        System.out.println(myCats);
         //Ordem por cor
-        meusGatos.sort(new PrimeiraClasse());
-        System.out.println(meusGatos);
+        myCats.sort(new PrimeiraClasse());
+        System.out.println(myCats);
         //Ordem por nome cor e idade (o critério é nesta ordem)
-        meusGatos.sort(new QuartaClasse());
-        System.out.println(meusGatos);
+        myCats.sort(new QuartaClasse());
+        System.out.println(myCats);
 
     }
 }
