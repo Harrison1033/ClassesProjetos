@@ -2,7 +2,7 @@ package aleatorio.classe;
 
 public class Verde extends Vaca{
 @Override
-public void falar(){
+public void toSpeak(){
     System.out.println("Munge");
 }
 }
