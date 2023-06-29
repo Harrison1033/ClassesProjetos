@@ -7,15 +7,15 @@ import aleatorio.classe.Verde;
 
 public class Principal {
     public static void main(String[] args) {
-        Animal cachorro = new Cachorro();
-        Animal vaca = new Vaca();
-        Animal gato = new Gato();
-        falar (cachorro);
-        falar(vaca);
-        falar(gato);
+        Animal dog = new Cachorro();
+        Animal cow = new Vaca();
+        Animal cat = new Gato();
+        falar (dog);
+        falar(cow);
+        falar(cat);
     }
     protected static void falar(Animal azul){
-        cachorro.falar();
+        dog.falar();
 
     }
 }
