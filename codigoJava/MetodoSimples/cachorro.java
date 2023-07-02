@@ -3,7 +3,7 @@ package aleatorio.classe;
 public class Azul extends Cachorro{
 
 @Override
-public void falar(){
+public void toSpeak(){
     System.out.println("Late ");
 }
 
