@@ -1,33 +1,33 @@
 package teste;
 //WildcardArray
 abstract class Animal {
-    public abstract void consultar();
+    public abstract void consult();
 }
 
-class Cachorro extends Animal {
+class Dog extends Animal {
     @Override
-    public void consultar() {
-        System.out.println("Consultar Cachorro: ");
+    public void consult() {
+        System.out.println("Consult Dog: ");
     }
 }
 
-class Gato extends Animal {
+class Cat extends Animal {
     @Override
-    public void consultar() {
-        System.out.println("Consultar Gato: ");
+    public void consult() {
+        System.out.println("Consult Cat: ");
     }
 }
 
 public class MainUm {
     public static void main(String[] args) {
-        Cachorro[] cachorros = {new Cachorro(), new Cachorro()};
-        Gato[] gatos = {new Gato(), new Gato()};
-        printConsulta(cachorros);
-        printConsulta(gatos);
+        Dog[] dogs = {new Dog(), new Dog()};
+        Cat[] cats = {new Cat(), new Cat()};
+        printConsulta(dogs);
+        printConsulta(cats);
     }
-    private static void printConsulta(Animal[]animals){
+    private static void printConsult(Animal[]animals){
         for (Animal animal : animals) {
-            animal.consultar();
+            animal.consult();
         }
 
     }
