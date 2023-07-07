@@ -6,16 +6,16 @@ import java.util.List;
 //GenericsIntrodução
 public class ClasseQuatro {
     public static void main(String[] args) {
-        List <String> lista = new ArrayList<>();
-        lista.add("Pokemon");
-        lista.add("Bleach");
-        lista.add("DeathNote");
+        List <String> list = new ArrayList<>();
+        list.add("Pokemon");
+        list.add("Bleach");
+        list.add("DeathNote");
 
-        for (String o : lista) {
+        for (String o : list) {
             System.out.println(o);
         }
         System.out.println("____________________");
-        for (Object ob : lista) {//Forma mais genérica
+        for (Object ob : list) {//Forma mais genérica
             System.out.println(ob);
         }
     }
