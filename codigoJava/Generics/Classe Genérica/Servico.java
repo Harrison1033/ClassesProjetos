@@ -11,7 +11,7 @@ public class ClasseTres<T> {//O "T" representa o tipo(Type)...
     public T buscandoObjetoDisponivel(){
         System.out.println("Searching avaliable objects: ");
         T t = avaliableObjects.remove(0);
-        System.out.println("Alugando Objeto: " + t);
+        System.out.println("Renting Object: " + t);
         System.out.println("Objetos disponíveis para alugar");
         System.out.println(avaliableObjects);
         return t;
