@@ -12,7 +12,7 @@ public class ClasseTres<T> {//O "T" representa o tipo(Type)...
         System.out.println("Searching avaliable objects: ");
         T t = avaliableObjects.remove(0);
         System.out.println("Renting Object: " + t);
-        System.out.println("Objetos disponíveis para alugar");
+        System.out.println("Objects avaliable for rent");
         System.out.println(avaliableObjects);
         return t;
     }
