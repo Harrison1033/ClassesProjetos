@@ -19,7 +19,7 @@ public class ClasseTres<T> {//O "T" representa o tipo(Type)...
     public void retornaObjetoAlugado(T t){
         System.out.println("Returning object " + t);
         avaliableObjects.add(t);
-        System.out.println("Objetos disponíveis para alugar: ");
+        System.out.println("Objects avaliable for rent: ");
         System.out.println(avaliableObjects);
     }
 }
