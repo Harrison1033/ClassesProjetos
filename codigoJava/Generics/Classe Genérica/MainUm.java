@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MainUm {
     public static void main(String[] args) {
-        List<ClasseUm>carrosDisponiveis = new ArrayList<>(List.of(new ClasseUm("BMW"),new ClasseUm("Fusca")));
+        List<ClasseUm>carsAvailable = new ArrayList<>(List.of(new ClasseUm("BMW"),new ClasseUm("Fusca")));
         List<ClasseDois>barcosDisponiveis = new ArrayList<>(List.of(new ClasseDois("Lancha"),new ClasseDois("Canoa")));
 
         ClasseTres<ClasseUm>umClasseTres = new ClasseTres<>(carrosDisponiveis);
