@@ -8,7 +8,7 @@ public class MainUm {
         List<ClasseUm>carsAvailable = new ArrayList<>(List.of(new ClasseUm("BMW"),new ClasseUm("Fusca")));
         List<ClasseDois>barcosDisponiveis = new ArrayList<>(List.of(new ClasseDois("Lancha"),new ClasseDois("Canoa")));
 
-        ClasseTres<ClasseUm>umClasseTres = new ClasseTres<>(carrosDisponiveis);
+        ClasseTres<ClasseUm>umClasseTres = new ClasseTres<>(carsAvailable);
         ClasseUm carro = umClasseTres.buscandoObjetoDisponivel();
         System.out.println("Usando o carro por um mês...");
         umClasseTres.retornaObjetoAlugado(carro);
