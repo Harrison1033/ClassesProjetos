@@ -11,7 +11,7 @@ public class MainUm {
         ClasseTres<ClasseUm>umClasseTres = new ClasseTres<>(carsAvailable);
         ClasseUm car = umClasseTres.buscandoObjetoDisponivel();
         System.out.println("Usingi the car for a month...");
-        umClasseTres.retornaObjetoAlugado(carro);
+        umClasseTres.retornaObjetoAlugado(car);
 
         System.out.println("____________________________________");
 
