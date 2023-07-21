@@ -1,9 +1,7 @@
 package teste;
 
-import java.util.Scanner;
 
-public class ParametrosInvalidosException {
-    Scanner scan = new Scanner(System.in);
+public class ParametrosInvalidosException {   
 	NumeroEmFluxo numeroEmFluxo = new NumeroEmFluxo;
 	
     public void digita() throws Exception {
