@@ -17,7 +17,7 @@ public class MainUm {
 
         ClasseTres<ClasseDois>doisClasseTres = new ClasseTres<>(boatsAvaliable);
         ClasseDois boat = doisClasseTres.buscandoObjetoDisponivel();
-        System.out.println("Usando o barco por um mês...");
+        System.out.println("Using the boat for a month...");
         doisClasseTres.retornaObjetoAlugado(barco);
     }
 }
