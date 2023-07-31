@@ -1,5 +1,5 @@
 package teste;
-//ListaEncadeadaNo
+//ListaEncadeadaNo(início de projeto)
 
 public class No <T>{
     private T conteudo;
