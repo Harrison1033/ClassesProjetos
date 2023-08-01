@@ -7,6 +7,20 @@ public class ListaEncadeada<T> { //Tipo Genérico
     public ListaEncadeada() { //construtor
         this.referenciaEntrada = null;
     }
+	
+	 public void add(T conteudo){// incluindo o método add()
+        No<T> novoNo = new No<>(conteudo);
+        if (this.isEmpty()){
+            referenciaEntrada = novoNo;
+            return;
+        }
+        No<T> noAuxiliar = referenciaEntrada;
+        for (int i = 0; i < this.size()-1; i++) {
+            noAuxiliar = noAuxiliar.getProximoNo();
+        }
+        noAuxiliar.setProximoNo(novoNo);
+    }
+	
     public int size(){ //Método com a lógica de negócio
         int tmamanhoLista = 0;
         No<T> referenciaAux = referenciaEntrada;
