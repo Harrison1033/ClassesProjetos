@@ -21,6 +21,19 @@ public class ListaEncadeada<T> { //Tipo Genérico
         noAuxiliar.setProximoNo(novoNo);
     }
 	
+	
+	 private No<T> getNo(int index){//Implementaçao do método getNo
+        validaIndice(index);
+        No<T>noAuxiliar = referenciaEntrada;
+        No<T>noRetorno = null;
+        for (int i = 0 ; i < this.size(); i++){
+            noRetorno = noAuxiliar;
+            noAuxiliar = noAuxiliar.getProximoNo();
+        }
+        return noRetorno;
+        }
+		
+	
     public int size(){ //Método com a lógica de negócio
         int tmamanhoLista = 0;
         No<T> referenciaAux = referenciaEntrada;
@@ -37,6 +50,12 @@ public class ListaEncadeada<T> { //Tipo Genérico
             }
         }
         return tmamanhoLista;
+    }
+	 private void validaIndice(int index){//Método para validar o ídice
+        if (index >= size()){
+            int ultimoIndice = size()-1;
+            throw new IndexOutOfBoundsException("Não existe conteúdo no ídice: " + index + "desta lista. a lista atual é: " + ultimoIndice);
+        }
     }
     
     public boolean isEmpty(){ //Método
