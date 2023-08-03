@@ -21,6 +21,9 @@ public class ListaEncadeada<T> { //Tipo Genérico
         noAuxiliar.setProximoNo(novoNo);
     }
 	
+	 public T get(int index) {//Implementaçao do método get
+        return getNo(index).getConteudo();
+    }
 	
 	 private No<T> getNo(int index){//Implementaçao do método getNo
         validaIndice(index);
