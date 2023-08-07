@@ -36,6 +36,17 @@ public class ListaEncadeada<T> { //Tipo Genérico
         return noRetorno;
         }
 		
+		 public T romove(int index){ // Implementação do método remove
+        No<T> noPivor = this.getNo(index);
+        if (index == 0){
+            referenciaEntrada = noPivor.getProximoNo();
+            return noPivor.getConteudo();
+        }
+        No<T> noAnterior = getNo(index -1);
+        noAnterior.setProximoNo(noPivor.getProximoNo());
+        return noPivor.getConteudo();
+    }
+		
 	
     public int size(){ //Método com a lógica de negócio
         int tmamanhoLista = 0;
