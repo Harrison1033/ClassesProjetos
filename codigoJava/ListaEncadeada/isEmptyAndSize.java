@@ -75,4 +75,16 @@ public class ListaEncadeada<T> { //Tipo Genérico
     public boolean isEmpty(){ //Método
         return referenciaEntrada == null ? true : false;
     }
+	
+	 @Override
+    public String toString() {//Método toString(personalizado)
+        String strRetorno = " ";
+        No<T> noAuxiliar = referenciaEntrada;
+        for (int i = 0; i < this.size(); i++) {
+            strRetorno += "[No { conteudo = " + noAuxiliar.getConteudo() + "}--->";
+            noAuxiliar = noAuxiliar.getProximoNo();
+        }
+        strRetorno += "null";
+        return strRetorno;
+    }
 }
