@@ -29,7 +29,7 @@ public class ListaEncadeada<T> { //Tipo Genérico
         validaIndice(index);
         No<T>noAuxiliar = referenciaEntrada;
         No<T>noRetorno = null;
-        for (int i = 0 ; i < this.size(); i++){
+        for (int i = 0 ; i <= index; i++){
             noRetorno = noAuxiliar;
             noAuxiliar = noAuxiliar.getProximoNo();
         }
