@@ -3,7 +3,7 @@ package teste;
 import java.util.Comparator;
 import java.util.Objects;
 
-//Produto (Set)
+
 public class Produto implements Comparable<Produto> {
     //atributos
     private long codigo;
