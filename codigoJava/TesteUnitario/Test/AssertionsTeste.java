@@ -1,4 +1,3 @@
-package com.github.willyancaetano.junit;
 
 import org.junit.jupiter.api.Test;
 
