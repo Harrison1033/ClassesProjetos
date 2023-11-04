@@ -1,4 +1,4 @@
-package teste;
+
 //Evento(Map)
 public class Evento {
     //atributos
