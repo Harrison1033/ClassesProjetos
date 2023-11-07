@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-//livrariaOnline(Map0
+//livrariaOnline(Map)
 public class LivrariaOnline {
     //atributos
     private Map<String, Livro> livros;
