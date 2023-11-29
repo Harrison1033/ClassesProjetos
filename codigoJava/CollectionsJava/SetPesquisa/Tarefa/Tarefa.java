@@ -1,5 +1,3 @@
-
-
 public class Tarefa {
   //atributos
   private String descricao;
