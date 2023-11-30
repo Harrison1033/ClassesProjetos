@@ -1,4 +1,4 @@
-package bk.com.harrison.principal;
+
 import java.util.Scanner;
 
 public class PrincipalTeste {
