@@ -3,7 +3,7 @@ package br.com.harrison.classe;
 
 import java.util.Scanner;
 
-public class TesteDois {
+public class AntecessorSucessor {
     Scanner scan = new Scanner(System.in);
     int number;
     int predecessor;
