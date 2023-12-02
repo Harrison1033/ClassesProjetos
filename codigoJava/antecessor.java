@@ -1,4 +1,4 @@
-package br.com.harrison.classe;
+
 //Antecessor e sucessor
 
 import java.util.Scanner;
