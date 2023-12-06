@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
      public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("00.00");
         double a, b, c;
         double square, circle, trapeze, rectangle, triangle;
         System.out.println("Enter the value of A: ");
