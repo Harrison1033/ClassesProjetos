@@ -3,7 +3,7 @@ package teste;
 import java.util.List;
 import java.util.ArrayList;
 //ArreyList
-public class ClasseSeis {
+public class Main {
     public static void main(String[] args) {
 
         List<String>strings = new ArrayList<>(List.of("1" , "3" , "5" , "7", "8"));
