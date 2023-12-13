@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class PrincipalTeste {
+public class MainArray {
     public static void main(String[] args) {
         //Arrays de tamanho n que imprime tudo no final
         Scanner scan = new Scanner(System.in);
