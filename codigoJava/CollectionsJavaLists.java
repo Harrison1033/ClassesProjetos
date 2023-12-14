@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Iterator;
 
-public class MainClasse {
+public class Main{
     public static void main(String[] args) {
 //Criando uma lista e adicionando 7 valores
         List<Double> notes = new ArrayList<>();
