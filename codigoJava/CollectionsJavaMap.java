@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Interface Map
   */
-public class MainClasse {
+public class Main{
     public static void main(String[] args) {
        //Crie um dicionário que relacione os models e seus respectivos consumption
         Map<String,Double> popularCars = new HashMap<>(){{
