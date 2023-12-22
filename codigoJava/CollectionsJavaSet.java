@@ -1,7 +1,6 @@
 package estudando.classeMain;
 
 import java.util.*;
-
 /**
  * Interface Set
  * Não permite elementos duplicados
