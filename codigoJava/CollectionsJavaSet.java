@@ -5,7 +5,7 @@ import java.util.*;
  * Não permite elementos duplicados
  * não possui índices
  */
-public class MainClasse {
+public class Main {
     public static void main(String[] args) {
         //Crie um conjunto e adicione as notes:
         Set<Double> notes = new HashSet<>(Arrays.asList(7d,8.5,9.3,5d,7d,0d,3.6));
