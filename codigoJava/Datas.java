@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainClasse2 {
+public class Main{
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2021,5,7,15,45,0);//inserindo date prédefinida
