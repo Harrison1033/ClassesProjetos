@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class MainClasse2 {
+public class Main{
     public static void main(String[] args) {
      double d = 1145.4;
 
