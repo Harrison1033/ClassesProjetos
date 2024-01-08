@@ -1,4 +1,4 @@
-package br.com.harrison.principal;
+
 import java.util.Scanner;
 //convertendo days em years, monthes e days
 public class TesteMain01 {
