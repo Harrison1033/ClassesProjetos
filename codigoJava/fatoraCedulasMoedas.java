@@ -1,5 +1,4 @@
 package br.com.harrison.principal;
-
 import java.util.Scanner;
 //Leia um valor de ponto flutuante com duas casas decimais. Este valor representa um valor monetário. A seguir, calcule
 // o menor número de notes e coins possíveis no qual o valor pode ser decomposto. As notes consideradas são de 100, 50,
