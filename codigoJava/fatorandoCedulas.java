@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 //Fatorando cédula
 public class Main {
