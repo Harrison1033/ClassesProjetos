@@ -2,7 +2,7 @@ package br.com.harrison1.classeA;
 
 import java.util.Scanner;
 
-public class ClasseD {
+public class main {
     Scanner scan = new Scanner(System.in);
     double a;
     double b;
