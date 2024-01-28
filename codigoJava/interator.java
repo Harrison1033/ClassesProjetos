@@ -3,7 +3,6 @@ package br.com.harrison.classe;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
-
 public class TesteTres{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
