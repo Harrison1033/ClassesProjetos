@@ -3,7 +3,7 @@ package br.com.harrison.classe;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
-public class TesteTres{
+public class Main{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // vamos criar uma ArrayList
