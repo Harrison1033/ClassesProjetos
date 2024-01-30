@@ -1,7 +1,7 @@
 package br.com.harrison.classe;
 //juros
 import java.util.Scanner;
-public class TesteDois {
+public class Main {
     Scanner scan = new Scanner(System.in);
     double wage;
     double amount;
