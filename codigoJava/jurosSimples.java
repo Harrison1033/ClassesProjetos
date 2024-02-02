@@ -1,10 +1,12 @@
 //juros
 import java.util.Scanner;
 public class Main {
+	
     Scanner scan = new Scanner(System.in);
+	
     double wage;
     double amount;
-
+	
     public void imprimir(){
         System.out.println("Enter salary amount: ");
         wage = scan.nextDouble();
