@@ -1,7 +1,6 @@
 //juros
 import java.util.Scanner;
-public class Main {
-	
+public class Main {	
     Scanner scan = new Scanner(System.in);
 	
     double wage;
