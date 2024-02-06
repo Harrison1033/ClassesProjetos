@@ -1,5 +1,4 @@
 package br.com.harrison.principal;
-
 import java.util.Scanner;
 
 public class Main {
