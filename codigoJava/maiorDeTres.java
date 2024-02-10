@@ -8,7 +8,6 @@ public class Main {
         int b = scan.nextInt();
         System.out.println("Enter the third number: ");
         int c = scan.nextInt();
-
         if(a > b && a > c){
             System.out.println(a + " it is bigger");
         }else if(b > c){
