@@ -1,4 +1,4 @@
-//note e Média usando o for
+//nota e Média usando o for
 
 package br.com.harrison.classe;
 
