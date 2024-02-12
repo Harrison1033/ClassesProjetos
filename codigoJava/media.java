@@ -1,5 +1,4 @@
 //nota e Média usando o for
-
 package br.com.harrison.classe;
 
 import java.util.Scanner;
