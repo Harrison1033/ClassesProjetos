@@ -1,5 +1,4 @@
 //nota e Média usando o for
-
 import java.util.Scanner;
 
 public class Avarage {
