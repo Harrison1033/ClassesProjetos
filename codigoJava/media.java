@@ -7,6 +7,7 @@ public class Avarage {
     public  double average;
 
     public void print(){
+		
         for (int i = 0; i < 3; i++){
             System.out.println("Type the note " + (i + 1));
             note = scan.nextDouble();
@@ -23,6 +24,7 @@ public class Avarage {
             System.out.println("\nAPPROVATE, CONGRATULATIONS:");
         }else {
             System.out.println("\nInvalid Note:");
+			
         }
     }
 }
