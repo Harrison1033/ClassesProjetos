@@ -1,6 +1,6 @@
 //nota e Média usando o for
 import java.util.Scanner;
-public class Avarage {
+public class Main {
     Scanner scan = new Scanner(System.in);
     public double note;
     public double increment;
