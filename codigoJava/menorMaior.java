@@ -1,4 +1,4 @@
-package br.com.harrison.classe;
+
 import java.util.Scanner;
 public class SmallestBiggest {
     public static void main(String[] args) {
