@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SmallestBiggest {
+public class Main {
     public static void main(String[] args) {
         final int NUMBERS_TO_READ;
         Scanner scan = new Scanner(System.in);
