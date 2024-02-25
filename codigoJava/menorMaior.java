@@ -20,7 +20,6 @@ public class Main {
                 maximum = num;
             }
         }
-
         System.out.println("The smallest number is: " + minimum);
         System.out.println("The biggest number is: " + maximum);
     }
