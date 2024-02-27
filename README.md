@@ -1,6 +1,6 @@
  # 💻ClassesProjetos
-### Classes e projetos java aprendidos
+### 🖥Classes e projetos java aprendidos
 
-- Códigos Java------(Códigos que aprendi durante a jornada)
-- codigoa Java com JOptionPane
-- Projetos
+- |**Códigos Java**                     |**Códigoa com JOptionPane**| **Projetos**                      |
+  |---------------------------------------|-------------------------|-------------------------|
+  |Códigos que aprendi durante a jornada  |Os mesmos códigos usando o JOptionPane|Projetos Pessoais e de Curso|
