@@ -2,7 +2,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class TesteMain01 {
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.000");
