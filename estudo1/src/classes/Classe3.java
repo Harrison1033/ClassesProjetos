@@ -1,11 +1,17 @@
 package classes;
 
 public class Classe3 {
-    public int soma(int a, int b){
-        return a + b;
+    static {
+        System.out.println("Dentro do bloco estático classe3");
     }
-    protected int multiplica(int a, int b){
-        return a * b;
+    {
+        System.out.println("Dentro do bloco de inicialização classe3");
+    }
+    public int soma(int a, int b){
+        return 3 + 9;
+    }
+    protected int multiplica(){
+        return 7 * 7;
     }
     protected int subtrai (int a, int b){
         return a - b;
@@ -19,7 +25,7 @@ public class Classe3 {
     public void imprimir(){
         System.out.println("Soma: "+soma(3,9));
         System.out.println("Subtrai: " + subtrai(14,9));
-        System.out.println("Multiplica: " + multiplica(7,7));
+        System.out.println("Multiplica: " + multiplica());
         System.out.println("Divide: " + divide(27,3));
     }
 }
