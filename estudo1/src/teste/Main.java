@@ -1,5 +1,5 @@
 package teste;
-
+//modify04
 import classes.Classe2;
 import classes.Classe3;
 import classes.Classe4;
@@ -14,7 +14,10 @@ public class Main {
         System.out.println("---------------------------------------");
         classe1.imprimir();
         System.out.println("---------------------------------------");
+        System.out.println("-----Métodos-----");
         classe3.imprimir();
+        System.out.println("---------------------------------------");
+        System.out.println("-----Sobrecarga do toString-----");
         classe4.setNome("Fredie Nendile");
         System.out.println(classe4.toString());
     }
