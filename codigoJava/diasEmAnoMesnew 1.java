@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //convertendo days em years, monthes e days
-public class TesteMain01 {
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter age in days:");
