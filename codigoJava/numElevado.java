@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-
+//Número Elevado
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
