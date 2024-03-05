@@ -1,22 +1,11 @@
 package classes;
+//tipo Cliente
+public enum Classe4 {
+   PESSOA_FISICA (1),
+    PESSOA_JURIDICA (2);
+   public final int valor;
 
-public class Classe4 {
-    private String nome;
-    static {
-        System.out.println("Eis abaixo o nome: ");
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    @Override
-    public String toString() {
-        return "Classe4: " +
-                "Nome = " + nome  ;
+    Classe4(int valor) {
+        this.valor = valor;
     }
 }

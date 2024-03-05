@@ -1,24 +1,47 @@
 package classes;
 public class Classe1 {
-    protected int idade;
-    protected String nome;
-    protected double altura;
-
+    private String nome;
+    private Classe4 classe4;
+    private Classe3 classe3;
     static {
-        System.out.println("Dentro do bloco estático superclasse");
+        System.out.println("---------------Relatório----------------");
     }
-    {
-        System.out.println("Dentro do bloco de incialização superclasse");
+    public Classe1(String nome, Classe4 classe4) {
+        this.nome = nome;
+        this.classe4 = classe4;
+    }
+    public Classe1(String nome, Classe4 classe4,Classe3 classe3){
+        this(nome,classe4);
+        this.classe3 =  classe3;
     }
 
-    public Classe1(int idade, String nome, double altura) {
-        this.idade = idade;
-        this.nome = nome;
-        this.altura = altura;
+    public String getNome() {
+        return nome;
     }
-    public void imprimir(){
-        System.out.println("Idade: " + idade);
-        System.out.println("Nome: " + nome);
-        System.out.println("Altura: " + altura);
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Classe4 getClasse4() {
+        return classe4;
+    }
+
+    public void setClasse4(Classe4 classe4) {
+        this.classe4 = classe4;
+    }
+
+    public Classe3 getClasse3() {
+        return classe3;
+    }
+
+    public void setClasse3(Classe3 classe3) {
+        this.classe3 = classe3;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome = " + nome +", Tipo de Cliente = " + classe4 + " " + classe4.valor
+                +", Tipo de Pagemento = " + classe3 + " R$: " +classe3.calculaValor(100);
     }
 }
