@@ -1,18 +1,22 @@
 package classes;
+
 public class Classe1 {
     private String nome;
     private Classe4 classe4;
     private Classe3 classe3;
+
     static {
-        System.out.println("---------------Relatório----------------");
+        System.out.println("-----------------------------------Relatório------------------------------------");
     }
+
     public Classe1(String nome, Classe4 classe4) {
         this.nome = nome;
         this.classe4 = classe4;
     }
-    public Classe1(String nome, Classe4 classe4,Classe3 classe3){
-        this(nome,classe4);
-        this.classe3 =  classe3;
+
+    public Classe1(String nome, Classe4 classe4, Classe3 classe3) {
+        this(nome, classe4);
+        this.classe3 = classe3;
     }
 
     public String getNome() {
@@ -41,7 +45,7 @@ public class Classe1 {
 
     @Override
     public String toString() {
-        return "Nome = " + nome +", Tipo de Cliente = " + classe4 + " " + classe4.valor
-                +", Tipo de Pagemento = " + classe3 + " R$: " +classe3.calculaValor(100);
+        return "Nome = " + nome + ", Tipo de Cliente = " + classe4 + " " + classe4.valor
+                + ", Tipo de Pagemento = " + classe3 + " R$: " + classe3.calculaValor(100);
     }
 }
