@@ -1,5 +1,12 @@
 package teste;
-//modify04
+//modify06
+/**
+ * Programa Destinado para rever temas já aprendidos
+ * em cada classe terá uma descrição do que ela represnta
+ * toda vez que o programa mudar, as descrições também devem mudar
+ * por enquanto, eles estarão disponíveis no meu github para testar meu conhecimento git
+ * ao final, espero está preparado para um projeto bem complexo
+ */
 
 import classes.Classe1;
 import classes.Classe2;
