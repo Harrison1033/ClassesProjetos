@@ -1,7 +1,7 @@
 package br.com.harrison.classe;
 //parImpar
 import java.util.Scanner;
-public class TesteDois {
+public class Main {
     Scanner scan = new Scanner(System.in);
     
     public void imprimir(){
