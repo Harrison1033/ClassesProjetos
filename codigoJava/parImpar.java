@@ -1,4 +1,4 @@
-package br.com.harrison.classe;
+
 //parImpar
 import java.util.Scanner;
 public class Main {
