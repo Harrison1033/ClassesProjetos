@@ -1,7 +1,7 @@
 package classes;
 
 // tipo Pagamento
-public enum Classe3 {
+public enum Classe3 implements Classe2{
     CREDITO {
         @Override
         public double calculaValor(double valor) {

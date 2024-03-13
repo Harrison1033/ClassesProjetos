@@ -19,6 +19,7 @@ public class Main {
         Classe1 cliente2 = new Classe1("Jumbo", Classe4.PESSOA_JURIDICA, Classe3.DEBITO);
         Classe1 cliente3 = new Classe1("Emília", Classe4.PESSOA_FISICA, Classe3.DEBITO);
         Classe1 cliente4 = new Classe1("Itamaraty", Classe4.PESSOA_JURIDICA, Classe3.CREDITO);
+        Classe2.seuNome();
 
         System.out.println(cliente1);
         System.out.println(cliente2);
