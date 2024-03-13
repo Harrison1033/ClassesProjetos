@@ -25,6 +25,8 @@ public class UsuarioRepository {
         List<Usuario> usuarios = new ArrayList<>();
         usuarios.add(new Usuario("Harry","password"));
         usuarios.add(new Usuario("Kelly","mastepass"));
+        usuarios.add(new Usuario("Helio","micael"));
+        usuarios.add(new Usuario("Emília","minipass"));
         return usuarios;
     }
     public Usuario findById(Integer id){
