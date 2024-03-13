@@ -14,10 +14,10 @@ public class UsuarioRepository {
         else
             System.out.println("UPDATE - Recebendo usuário na camada de repositório");
 
-        System.out.println(usuario+"\n");
+        System.out.println(usuario);
     }
     public void deleteById(Integer id){
-        System.out.println(String.format("DELETE/id - Recebendo o id: %d para a camada de repositório"));
+        System.out.println(String.format("DELETE/id - Recebendo o id: %d para a camada de repositório",id));
         System.out.println(id);
     }
     public List<Usuario> findAll(){
@@ -30,11 +30,11 @@ public class UsuarioRepository {
         return usuarios;
     }
     public Usuario findById(Integer id){
-        System.out.println(String.format("FIND/id - Recebendo o id: %d para ler"));
+        System.out.println(String.format("FIND/id - Recebendo o id: %d para ler",id));
         return new Usuario("Harry","password");
     }
     public Usuario findByUserName(String username){
-        System.out.println(String.format("FIND/username - Recebendo o username"));
+        System.out.println(String.format("FIND/username - Recebendo o username",username));
         return new Usuario("Harry","password");
     }
 }

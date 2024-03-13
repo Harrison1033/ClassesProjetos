@@ -12,9 +12,10 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario: " +
-                "login = " + login +
-                ", password = " + password ;
+        return "Usuario{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     public Integer getId() {
