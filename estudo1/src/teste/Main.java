@@ -17,7 +17,9 @@ public class Main {
     public static void main(String[] args) {
         Classe4 classe4 = new Classe4();
         Classe3 classe3 = new Classe3();
+        Classe2 classe2 = new Classe2();
         classe4.imprimir();
         classe3.imprimir();
+        classe2.imprimir();
     }
 }

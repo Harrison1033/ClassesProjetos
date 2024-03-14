@@ -1,8 +1,7 @@
 package classes;
 //Switch
 public class Classe3 {
-    private short dia = 3;
-
+    private short dia = 4;
     public void imprimir(){
         switch (dia) {
             case 1 -> System.out.println("Domingo");
