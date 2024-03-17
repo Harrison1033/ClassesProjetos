@@ -1,3 +1,4 @@
+
 //parImpar
 
 import java.util.Scanner;
