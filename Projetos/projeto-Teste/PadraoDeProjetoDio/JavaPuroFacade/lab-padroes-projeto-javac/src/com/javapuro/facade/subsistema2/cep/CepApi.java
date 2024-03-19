@@ -8,6 +8,9 @@ public class CepApi {
     public static CepApi getInstancia() {
         return instancia;
     }
+    public String recuperarBairro(String cep){
+        return "Castelão";
+    }
     public String recuperarCidade(String cep){
         return "Fortaleza";
     }
