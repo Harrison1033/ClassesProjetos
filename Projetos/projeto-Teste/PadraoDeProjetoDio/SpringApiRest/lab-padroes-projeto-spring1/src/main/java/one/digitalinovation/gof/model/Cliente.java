@@ -1,6 +1,6 @@
 package one.digitalinovation.gof.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 public class Cliente {

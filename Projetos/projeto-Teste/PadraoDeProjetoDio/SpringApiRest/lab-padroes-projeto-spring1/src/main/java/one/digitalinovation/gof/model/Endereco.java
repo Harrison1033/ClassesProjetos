@@ -1,7 +1,6 @@
 package one.digitalinovation.gof.model;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * Os atributos desse modelo foram gerados automaticamente pelo site
