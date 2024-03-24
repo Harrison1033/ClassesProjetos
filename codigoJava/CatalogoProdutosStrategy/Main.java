@@ -1,15 +1,13 @@
-package classes;
-
 import java.util.Scanner;
 
-public class Classe1 {
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        Classe2 classe2 = new Classe2();
-        Classe4 classe4 = new Classe4("Usuário 1");
+        Catalog catalog = new Catalog();
+        User user = new User("Usuário 1");
 
-        classe2.addObserver(classe4);
+        catalog.addObserver(user);
         System.out.println("Digite o Nome do Produto: ");
         String name = scan.nextLine();
         System.out.println("Digite a marca do produto: ");
@@ -23,9 +21,8 @@ public class Classe1 {
 
         scan.close();
 
-        classe2.addProduct(name, description, price, subscribeChoice);
+        catalog.addProduct(name, description, price, subscribeChoice);
 
     }
 
 }
-

@@ -1,25 +1,26 @@
+CatalogObservable
 package classes;
 
 import java.util.ArrayList;
 import java.util.List;
 
 //Catalog
-public class Classe2 implements Classe3 {
-    private List<Classe5>observers = new ArrayList<>();
+public class Catalog implements CatalogObservable {
+    private List<Observer>observers = new ArrayList<>();
 
     @Override
-    public void addObserver(Classe5 classe5) {
-        observers.add(classe5);
+    public void addObserver(Observer observer) {
+        observers.add(observer);
     }
 
     @Override
-    public void removeObserver(Classe5 classe5) {
-        observers.remove(classe5);
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
     }
 
     @Override
     public void notifyObserver(String productName) {
-        for (Classe5 observer: observers){
+        for (Observer observer: observers){
             observer.update(productName);
         }
 
