@@ -1,9 +1,31 @@
 package classes;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.List;
+import static classes.Classe3.addUsuario;
+import static classes.Classe3.listUsuarios;
 
-//UserManage
+//Classe Main de User
 public class Classe2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        try {
+            int quantidade;
+            System.out.println("Digite um número:");
+            quantidade = scan.nextInt();
+            scan.nextLine();  // Consumir a quebra de linha após a leitura do número
+
+            for (int i = 1; i <= quantidade; i++) {
+                String nome;
+                System.out.println("Digite o nome:");
+                nome = scan.nextLine();
+                addUsuario(i + " - " + nome);
+            }
+        }catch (InputMismatchException e){
+            System.out.println("Erro, você deveria ter digitado um número inteiro: ");
+        }
+        listUsuarios();
+
+    }
 
 }

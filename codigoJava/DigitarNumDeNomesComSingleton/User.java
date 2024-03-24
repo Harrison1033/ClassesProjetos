@@ -1,11 +1,11 @@
 package classes;
 //Classe User
 
-class Classe4 {
+class User {
     private final int id;
     private final String nome;
 
-    public Classe4(int id,String nome){
+    public User(int id,String nome){
         this.id = id;
         this.nome = nome;
     }
