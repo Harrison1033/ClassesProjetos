@@ -1,9 +1,9 @@
 package classes;
 //CurrencyAdapter
 // Novo adaptador que usa a antiga conversão e aplica a taxa adicional de GBP para EUR
-public class Classe4 {
-    private final Classe5 oldConverter;
-    public Classe4(Classe5 oldConverter) {
+public class CurrencyAdapter {
+    private final OldCurrencyConverter oldConverter;
+    public CurrencyAdapter(OldCurrencyConverter oldConverter) {
         this.oldConverter = oldConverter;
     }
     // TODO: Implementar método de conversão de USD para outra moeda (por exemplo, JPY)
