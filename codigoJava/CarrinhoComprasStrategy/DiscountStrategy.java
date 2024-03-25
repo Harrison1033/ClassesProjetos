@@ -1,6 +1,7 @@
 package classes;
-//DiscountStrategy
-public interface Classe5 {
+
+public interface DiscountStrategy {
+	
     double applyDiscount(double total);
 
 }
