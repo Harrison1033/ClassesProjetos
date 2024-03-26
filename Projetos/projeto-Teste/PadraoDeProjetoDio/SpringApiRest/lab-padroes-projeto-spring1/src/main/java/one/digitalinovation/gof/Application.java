@@ -11,6 +11,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * - Spring Web
  * - H2 Database
  * - Open Feign
+ * - Para acessar a aplicação digite o endereço abaixo:
+ * http://127.0.0.1:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
  *
  * @author f
  */
