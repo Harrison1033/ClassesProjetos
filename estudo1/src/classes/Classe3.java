@@ -14,9 +14,9 @@ public class Classe3 {
         // TODO: Chamar o método para converter USD para a nova moeda desejada (por exemplo, JPY)
         double inputEUR = adapter.convertUSDtoEUR(input);
         // TODO: Imprimir o resultado da conversão
-        System.out.println("USD: " + input);
+        System.out.printf("USD: R$: %.2f\n" , input);
         // TODO: Imprimir o resultado da conversão com a nova moeda (por exemplo, JPY)
-        System.out.println("EUR: " + inputEUR);
+        System.out.printf("EUR: R$: %.2f" , inputEUR);
 
     }
 
