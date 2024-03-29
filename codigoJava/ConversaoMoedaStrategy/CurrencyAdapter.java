@@ -4,6 +4,7 @@ package classes;
 
 public class CurrencyAdapter {
     private final OldCurrencyConverter oldConverter;
+	
     public CurrencyAdapter(OldCurrencyConverter oldConverter) {
         this.oldConverter = oldConverter;
     }
