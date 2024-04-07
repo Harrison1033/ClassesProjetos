@@ -15,5 +15,6 @@ public class CurrencyAdapter {
     public double convertUSDtoEUR(double amount){
         double amountGBP = oldConverter.convertUSDtoGBP(amount);
         return amountGBP * 1.0625;
+		
     }
 }
