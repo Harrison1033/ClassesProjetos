@@ -17,4 +17,5 @@ public class CurrencyAdapter {
         return amountGBP * 1.0625;
 		
     }
+	
 }
