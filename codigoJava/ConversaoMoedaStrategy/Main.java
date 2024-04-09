@@ -22,6 +22,7 @@ public class Main {
 		
         // TODO: Imprimir o resultado da conversão com a nova moeda (por exemplo, JPY)
         System.out.println("EUR: " + inputEUR);
+		
     }
 
 }
