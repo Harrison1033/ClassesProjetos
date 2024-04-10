@@ -8,6 +8,7 @@ public class CurrencyAdapter {
 	
     public CurrencyAdapter(OldCurrencyConverter oldConverter) {
         this.oldConverter = oldConverter;
+		
     }
 	
     // TODO: Implementar método de conversão de USD para outra moeda (por exemplo, JPY)	
