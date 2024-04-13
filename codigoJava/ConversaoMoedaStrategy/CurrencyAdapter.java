@@ -12,6 +12,7 @@ public class CurrencyAdapter {
     }
 	
     // TODO: Implementar método de conversão de USD para outra moeda (por exemplo, JPY)	
+	
     // Dica: Você pode criar métodos adicionais conforme necessário.
     public double convertUSDtoEUR(double amount){
         double amountGBP = oldConverter.convertUSDtoGBP(amount);
