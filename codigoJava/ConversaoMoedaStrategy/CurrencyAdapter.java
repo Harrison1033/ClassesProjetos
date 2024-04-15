@@ -1,7 +1,6 @@
 package classes;
 
 // Novo adaptador que usa a antiga conversão e aplica a taxa adicional de GBP para EUR
-
 public class CurrencyAdapter {
 	
     private final OldCurrencyConverter oldConverter;
