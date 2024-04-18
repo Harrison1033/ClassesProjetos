@@ -1,6 +1,7 @@
 package classes;
 
 // Antiga classe de conversão que só suporta a conversão de USD para GBP
+
 public class OldCurrencyConverter {
 
     public double convertUSDtoGBP(double amount){
