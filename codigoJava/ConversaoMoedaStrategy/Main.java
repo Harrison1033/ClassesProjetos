@@ -9,6 +9,7 @@ public class Main {
 
         System.out.println("Digite um valor a ser convertido: ");
         double input = Double.parseDouble(scan.nextLine());
+		
         scan.close();
 		
         OldCurrencyConverter oldConverter = new OldCurrencyConverter();
