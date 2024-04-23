@@ -1,3 +1,4 @@
+
 package classes;
 
 // Antiga classe de conversão que só suporta a conversão de USD para GBP
