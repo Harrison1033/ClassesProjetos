@@ -6,15 +6,15 @@ import java.util.Scanner;
 public class AntecessorSucessor {
     Scanner scan = new Scanner(System.in);
     int number;
-    int predecessor;
+    int antecessor;
     int successor;
 
     public void imprimir(){
         System.out.println("Enter a number: ");
         number = scan.nextInt();
-        predecessor = number - 1;
+        antecessor = number - 1;
         successor = number + 1;
-        System.out.println("The number is: " + number + "\nThe predecessor é: " + predecessor + "\nThe successor é: " + successor);
+        System.out.println("The number is: " + number + "\nThe antecessor é: " + antecessor + "\nThe successor é: " + successor);
 
     }
 
