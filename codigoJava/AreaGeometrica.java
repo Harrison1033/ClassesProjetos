@@ -1,28 +1,27 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
-     public static void main(String[] args) {
+public class Main1 {
+    public static void main(String[] aargs) {
         Scanner scan = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("00.00");
         double a, b, c;
-        double square, circle, trapeze, rectangle, triangle;
-        System.out.println("Enter the value of A: ");
+        double circulo, quadrado, triangulo, retangulo, trapezio;
+        System.out.println("Digite o valor de a: ");
         a = scan.nextDouble();
-        System.out.println("Enter the value of B: ");
+        System.out.println("Digite o valor de b: ");
         b = scan.nextDouble();
-        System.out.println("Enter the value of C: ");
+        System.out.println("Digite o valor de c: ");
         c = scan.nextDouble();
-        triangle = (a * c)/2;
-        circle = 3.14159 * Math.pow(c,2);
-        trapeze = ((a+b)*c)/2;
-        square = b*b;
-        rectangle = a * b;
-        System.out.println("Triangle: " + df.format(triangle));
-        System.out.println("Circle: " + df.format(circle));
-        System.out.println("Trapeze: " + df.format(trapeze));
-        System.out.println("Square: " + df.format(square));
-        System.out.println("Rectangle: " + df.format(rectangle));
-
+        triangulo = (a * c)/2;
+        circulo = 3.14159 * Math.pow(c,2);
+        trapezio = ((a+b)*c)/2;
+        quadrado = b * b;
+        retangulo = a * b;
+        System.out.println("Triângulo: " + df.format(triangulo));
+        System.out.println("Círculo: " + df.format(circulo));
+        System.out.println("Trapézio: " + df.format(trapezio));
+        System.out.println("Quadrado: " + df.format(quadrado));
+        System.out.println("Retângulo: " + df.format(retangulo));
     }
 }

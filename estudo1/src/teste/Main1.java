@@ -1,24 +1,29 @@
 package teste;
-/**
- * programa responsável por receber um número inteiro
- * em seguida mostrar o número digitado
- * depois mostrar o antecessor do númro digitado
- * e por fim o sucessor do númro digitado
- */
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main1 {
     public static void main(String[] aargs) {
         Scanner scan = new Scanner(System.in);
-        int numero;
-        int antecessor;
-        int sucessor;
-        System.out.println("Digite um número: ");
-        numero = scan.nextInt();
-        antecessor = numero -1 ;
-        sucessor = numero + 1;
-        System.out.println("O número é: " + numero + "\nAntecessor: " + antecessor + "\nSucessor: " + sucessor);
-
+        DecimalFormat df = new DecimalFormat("00.00");
+        double a, b, c;
+        double circulo, quadrado, triangulo, retangulo, trapezio;
+        System.out.println("Digite o valor de a: ");
+        a = scan.nextDouble();
+        System.out.println("Digite o valor de b: ");
+        b = scan.nextDouble();
+        System.out.println("Digite o valor de c: ");
+        c = scan.nextDouble();
+        triangulo = (a * c)/2;
+        circulo = 3.14159 * Math.pow(c,2);
+        trapezio = ((a+b)*c)/2;
+        quadrado = b * b;
+        retangulo = a * b;
+        System.out.println("Triângulo: " + df.format(triangulo));
+        System.out.println("Círculo: " + df.format(circulo));
+        System.out.println("Trapézio: " + df.format(trapezio));
+        System.out.println("Quadrado: " + df.format(quadrado));
+        System.out.println("Retângulo: " + df.format(retangulo));
     }
 }
