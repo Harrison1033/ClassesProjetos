@@ -1,5 +1,12 @@
 
 //Antecessor e sucessor
+/**
+ * programa responsável por receber um número inteiro
+ * em seguida mostrar o número digitado
+ * depois mostrar o antecessor do númro digitado
+ * e por fim o sucessor do númro digitado
+ */
+
 
 import java.util.Scanner;
 
