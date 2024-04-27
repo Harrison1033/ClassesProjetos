@@ -1,6 +1,11 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-
+/**
+ * Destinado a fornecer 3 valores (a, b, c)
+ * após os 3 valores serem digitados, serão feito os calculos das formas geométricas
+ * no case seriam o círculo, tirângulo, quadrado, retãngulo e o traprézio
+ * e por fim, o resultado impresso.
+ */
 public class Main1 {
     public static void main(String[] aargs) {
         Scanner scan = new Scanner(System.in);
