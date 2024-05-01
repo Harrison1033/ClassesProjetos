@@ -7,7 +7,7 @@ public class DadosConta {
         NomeCli nomeCli = new NomeCli();
         Scanner scan = new Scanner(System.in);
         public void imprimir(){
-            System.out.println("Por favor, digite o número da Agência!");
+            System.out.println("Por favor, digite o número da Conta!");
             int numero = scan.nextInt();
             System.out.println("Digite a Agência!");
             String agencia = scan.next();

@@ -8,12 +8,13 @@ public class Classe1 {
     int numero;
     String agencia;
 
-    public void imprimir(){
+    public void imprimir() {
         System.out.println("Por favor, digite o número da conta: ");
         numero = scan.nextInt();
         System.out.println("Agora digite o número da agência: ");
-         agencia = scan.next();
+        agencia = scan.next();
     }
+
     public double getSaldo() {
         return 237.37;
     }
