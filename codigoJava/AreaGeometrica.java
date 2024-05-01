@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Main1 {
     public static void main(String[] aargs) {
         Scanner scan = new Scanner(System.in);
+		
         DecimalFormat df = new DecimalFormat("00.00");
         double a, b, c;
         double circulo, quadrado, triangulo, retangulo, trapezio;
