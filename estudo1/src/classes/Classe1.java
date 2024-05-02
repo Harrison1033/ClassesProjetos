@@ -5,6 +5,7 @@ import java.util.Scanner;
 //Main1 (informações de conta)
 public class Classe1 {
     Scanner scan = new Scanner(System.in);
+    
     int numero;
     String agencia;
 
