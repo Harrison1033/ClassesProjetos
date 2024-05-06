@@ -36,23 +36,27 @@ class CurrencyAdapter {
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        try {
 
-        System.out.println("Digite o valor a ser Convertido: ");
-        double input = Double.parseDouble(scanner.nextLine());
+            System.out.println("Digite o valor a ser Convertido: ");
+            double input = Double.parseDouble(scanner.nextLine());
 
-        scanner.close();
+            scanner.close();
 
-        OldCurrencyConverter oldConverter = new OldCurrencyConverter();
-        CurrencyAdapter adapter = new CurrencyAdapter(oldConverter);
+            OldCurrencyConverter oldConverter = new OldCurrencyConverter();
+            CurrencyAdapter adapter = new CurrencyAdapter(oldConverter);
 
-        // TODO: Chamar o método para converter USD para a nova moeda desejada (por exemplo, JPY)
-        double inputEUR = adapter.convertUSDtoEUR(input);
+            // TODO: Chamar o método para converter USD para a nova moeda desejada (por exemplo, JPY)
+            double inputEUR = adapter.convertUSDtoEUR(input);
 
 
-        // TODO: Imprimir o resultado da conversão
+            // TODO: Imprimir o resultado da conversão
 
-        System.out.println("USD: " + input);
-        // TODO: Imprimir o resultado da conversão com a nova moeda (por exemplo, JPY)
-        System.out.println("EUR: " + inputEUR);
+            System.out.println("USD: " + input);
+            // TODO: Imprimir o resultado da conversão com a nova moeda (por exemplo, JPY)
+            System.out.println("EUR: " + inputEUR);
+        }catch (NumberFormatException e){
+            System.out.println("Erro... Digite somente números inteiros ou flutuantes com ponto");
+        }
     }
 }
