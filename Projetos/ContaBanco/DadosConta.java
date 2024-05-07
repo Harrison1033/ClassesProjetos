@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 //ContaTermanl
 public class DadosConta {
+	
         NomeCli nomeCli = new NomeCli();
         Scanner scan = new Scanner(System.in);
 		
