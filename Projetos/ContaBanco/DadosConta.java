@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class DadosConta {
 	
         NomeCli nomeCli = new NomeCli();
+		
         Scanner scan = new Scanner(System.in);
 		
         public void imprimir(){
