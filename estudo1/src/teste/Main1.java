@@ -2,8 +2,7 @@ package teste;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-//
+//Métodos intrelassados
 public class Main1 {
     public static void main(String[] aargs) {
         System.out.println("Entrando no método Main");
@@ -33,7 +32,9 @@ public class Main1 {
             int num2 = scan.nextInt();
             System.out.println(num1 * num2);
         }catch (InputMismatchException e){
-            System.out.println("Digite um número inteiro");
+            System.out.println("Erro. Digite um número inteiro -> " + e);
+        }finally {
+            System.out.println("Continuando o processamento:");
         }
         System.out.println("Finalizando o métoso C");
     }
