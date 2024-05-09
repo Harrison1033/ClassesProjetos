@@ -18,7 +18,7 @@ public class Main1 {
     static void b(){
         System.out.println("\nEntrando no método B");
         int i = 2 * 3;
-        System.out.println(i);
+        System.out.println("Resultado: " + i);
         c();
         System.out.println("Finalizando o método B");
     }
