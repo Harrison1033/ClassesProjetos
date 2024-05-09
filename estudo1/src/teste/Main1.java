@@ -1,8 +1,5 @@
 package teste;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 //
 public class Main1 {
     public static void main(String[] aargs) {
@@ -17,7 +14,9 @@ public class Main1 {
         System.out.println("Finalizando o método A");
     }
     static void b(){
-        System.out.println("Entrando no método B");
+        System.out.println("\nEntrando no método B");
+        int i = 2 * 3;
+        System.out.println(i);
         c();
         System.out.println("Finalizando o método B");
     }
