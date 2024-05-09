@@ -17,8 +17,10 @@ public class Main1 {
     }
     static void b(){
         System.out.println("\nEntrando no método B");
-        int i = 2 * 3;
-        System.out.println("Resultado: " + i);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite um nome: ");
+        String nome = scan.nextLine();
+        System.out.println("Nome: " + nome);
         c();
         System.out.println("Finalizando o método B");
     }
