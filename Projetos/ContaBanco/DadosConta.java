@@ -12,7 +12,7 @@ public class DadosConta {
         public void imprimir(){
             System.out.println("Por favor, digite o número da Conta!");
             int numero = scan.nextInt();
-            System.out.println("Digite a Agência!");
+            System.out.println("Digite o número da  Agência!");
             String agencia = scan.next();
             nomeCli.nome();
             System.out.println("Digite o saldo da conta!");
