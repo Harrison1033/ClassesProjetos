@@ -2,7 +2,7 @@ package teste;
 
 import java.util.Scanner;
 
-//ContaTermanl
+// ContaTermanl
 public class DadosConta {
 	
         NomeCli nomeCli = new NomeCli();
