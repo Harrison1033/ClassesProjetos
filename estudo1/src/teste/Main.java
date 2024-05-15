@@ -15,16 +15,36 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int idade = scanner.nextInt();
+        double limiteDiario = scanner.nextDouble();
 
-//  Verifique se a idade é maior ou igual a 18 e imprima uma mensagem informando que o usuário é elegível para criar uma conta bancária:
-        if (idade >= 18){
-            System.out.println("Voce esta elegivel para criar uma conta bancaria.");
-        }else {
-            System.out.println("Voce nao esta elegivel para criar uma conta bancaria.");
+// Crie um loop 'for' para iterar sobre os saques:
+        for (int i = 1; i <= 3; i++) {
+
+            // Solicite ao usuário o valor do saque:
+             System.out.println("Informe o valor do saque:");
+            double valorSaque = scanner.nextDouble();
+
+            // Verifique se o valor do saque é zero, encerrando as transações:
+            if (valorSaque == 0) {
+                System.out.println("Transacoes encerradas.");
+                break;
+            }
+
+            // Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:
+            if (valorSaque <= limiteDiario) {
+                limiteDiario -= valorSaque;
+
+                // Informe que o saque foi realizado e mostre o limite restante:
+                System.out.print("Saque realizado. ");
+                System.out.printf("Limite restante: %.1f\n", limiteDiario);
+            } else {
+                // Se o valor do saque ultrapassar o limite diário, informe que o saque não pode ser realizado:
+                System.out.println("Limite diario de saque atingido. Transacoes encerradas.");
+                break;
+            }
         }
 
-// Fechamos o objeto Scanner para liberar os recursos:
+        // Fechamos o Scanner para evitar vazamento de recursos:
         scanner.close();
     }
 }
