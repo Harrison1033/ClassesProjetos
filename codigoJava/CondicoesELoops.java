@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+		
         Scanner scanner = new Scanner(System.in);
 
         double limiteDiario = scanner.nextDouble();
@@ -21,12 +22,9 @@ public class Main {
             if (valorSaque == 0) {
                 System.out.println("Transacoes encerradas.");
                 break;
-            }
-
-            // Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:
-            if (valorSaque <= limiteDiario) {
+			 // Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:	
+            } else if (valorSaque <= limiteDiario) {
                 limiteDiario -= valorSaque;
-
                 // Informe que o saque foi realizado e mostre o limite restante:
                 System.out.print("Saque realizado. ");
                 System.out.printf("Limite restante: %.1f\n", limiteDiario);
