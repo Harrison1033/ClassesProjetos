@@ -1,6 +1,5 @@
 package teste;
 //Condições, Loops e Exceções na Prática com Java
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
