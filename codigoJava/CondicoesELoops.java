@@ -11,6 +11,7 @@ public class Main {
         double limiteDiario = scanner.nextDouble();
 
 // Crie um loop 'for' para iterar sobre os saques:
+
         for (int i = 1; i <= 3; i++) {
 
             // Solicite ao usuário o valor do saque:
