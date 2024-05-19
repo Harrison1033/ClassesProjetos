@@ -15,6 +15,7 @@ public class Main {
         for (int i = 1; i <= 3; i++) {
 
             // Solicite ao usuário o valor do saque:
+			
              System.out.println("Informe o valor do saque:");
             double valorSaque = scanner.nextDouble();
 
