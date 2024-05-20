@@ -20,6 +20,7 @@ public class Main {
             double valorSaque = scanner.nextDouble();
 
             // Verifique se o valor do saque é zero, encerrando as transações:
+			
             if (valorSaque == 0) {
                 System.out.println("Transacoes encerradas.");
                 break;
