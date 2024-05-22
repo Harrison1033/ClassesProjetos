@@ -1,7 +1,7 @@
 package classes;
 
 //iPhone
-public class Classe2 implements Classe5, Classe4, Classe3 {
+public class IPone implements ReprodutorMusical, Telefone, Internete {
     //Reprodutor de Músicas
     @Override
     public void tocar() {
