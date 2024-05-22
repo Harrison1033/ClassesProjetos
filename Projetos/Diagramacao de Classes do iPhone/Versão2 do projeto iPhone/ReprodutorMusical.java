@@ -1,7 +1,7 @@
 package classes;
 
 //Reprodutor musical
-public interface Classe5 {
+public interface ReprodutorMusical {
     void tocar();
 
     void pausar();
