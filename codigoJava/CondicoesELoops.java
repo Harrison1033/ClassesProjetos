@@ -24,7 +24,8 @@ public class Main {
             if (valorSaque == 0) {
                 System.out.println("Transacoes encerradas.");
                 break;
-			 // Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:	
+			 // Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:
+			 
             } else if (valorSaque <= limiteDiario) {
                 limiteDiario -= valorSaque;
                 // Informe que o saque foi realizado e mostre o limite restante:
