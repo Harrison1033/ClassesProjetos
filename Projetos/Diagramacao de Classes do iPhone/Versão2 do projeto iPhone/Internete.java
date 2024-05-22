@@ -1,7 +1,7 @@
 package classes;
 
 //Navegador de internet
-public interface Classe3 {
+public interface Internete {
     public void exibir();
 
     public void adicionarAba();
