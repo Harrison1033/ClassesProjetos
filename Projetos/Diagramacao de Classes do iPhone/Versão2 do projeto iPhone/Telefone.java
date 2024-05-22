@@ -1,7 +1,7 @@
 package classes;
 
 //Aparelho telefonico
-public interface Classe4 {
+public interface Telefone {
     public void ligar();
 
     public void atender();
