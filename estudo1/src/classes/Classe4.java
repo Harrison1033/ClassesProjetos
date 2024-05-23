@@ -1,10 +1,6 @@
 package classes;
 
-//Aparelho telefonico
-public interface Classe4 {
-    public void ligar();
+//
+public class Classe4 {
 
-    public void atender();
-
-    public void iniciarCorreioDeVoz();
 }
