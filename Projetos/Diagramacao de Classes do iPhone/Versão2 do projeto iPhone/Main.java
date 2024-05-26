@@ -8,6 +8,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         IPhone iPhone = new IPhone();
         int opcao = 0;
+		
         while (opcao == 0) {
             System.out.println("Qual opção Gostaria de Utilizar?");
             System.out.println("(a) Reprodutor musical\n(b) Telefone\n(c) Internet");
