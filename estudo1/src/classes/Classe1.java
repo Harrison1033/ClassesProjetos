@@ -8,6 +8,7 @@ import java.util.List;
 public class Classe1 {
     public static void main(String[] args) {
         List<String> lista = new ArrayList<>();
+
         lista.add("Laranja");
         lista.add("Limão");
         lista.add("Banana");
