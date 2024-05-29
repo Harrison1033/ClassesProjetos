@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-//Desafio Bootcamp2 ( )
+//Desafio Bootcamp2 (Melhoria do desafio 01 )
 public class Classe4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
