@@ -3,14 +3,18 @@ package classes;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-//
+//Desafio Bootcamp 04
 public class Classe2  {
     public static void main(String[] args) {
         // Lendo os dados de Entrada:
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o nome do titular: ");
         String titular = scanner.next();
+        System.out.println("Digite o número da conta: ");
         int numeroConta = scanner.nextInt();
+        System.out.println("Digite o saldo da conta: ");
         double saldo = scanner.nextDouble();
+        System.out.println("Digite a taxa de juros: ");
         double taxaJuros = scanner.nextDouble();
 
         ContaPoupanca contaPoupanca = new ContaPoupanca(numeroConta, titular, saldo, taxaJuros);
