@@ -9,7 +9,7 @@ public class Classe3 {
         //  Criar uma nova conta bancária com o saldo inicial
         System.out.println("Digite um saldo inicial:");
         double saldoInicial = scanner.nextDouble();
-        ContaBancaria conta = new ContaBancaria(saldoInicial);
+        ContaBancarias conta = new ContaBancarias(saldoInicial);
 
         // Lê a Entrada com o valor do deposito e aciona o método "depositar"
         System.out.println("Digite um valor a ser depositado: ");
@@ -26,10 +26,10 @@ public class Classe3 {
     }
 }
 
-class ContaBancaria {
+class ContaBancarias {
     private double saldo;
 
-    public ContaBancaria(double saldoInicial) {
+    public ContaBancarias(double saldoInicial) {
         this.saldo = saldoInicial;
     }
 
