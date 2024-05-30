@@ -70,11 +70,18 @@ public class Classe1 {
                 }
 
             } else {
-                System.out.println("Tipo: Cofre Fisico\n" + "Metodo de abertura: Chave");
+                if (!tipoCofre.equalsIgnoreCase("fisico")) {
+                    //A exceção IllegalArgumentException é usada para indicar que o segundo número deve ser maior que o primeiro.
+                    throw new IllegalArgumentException("Informação inválida: necessário ser fisico ou digital.");
+                } else {
+                    System.out.println("Tipo: Cofre Fisico\n" + "Metodo de abertura: Chave");
+                }
             }
-        }catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             System.out.println("O valor digitado tem que ser numérico: \n" + e);
-        }
+        }catch (IllegalArgumentException e){
+            System.out.println(e.getMessage()+ "\nIllegalArgumentException" );
         }
     }
+}
 
