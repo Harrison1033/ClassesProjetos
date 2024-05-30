@@ -21,7 +21,7 @@ abstract class Cofre {
 
 class CofreDigital extends Cofre {
 
-    private int senha;
+    private final int senha;
 
     public CofreDigital(int senha) {
         super("Cofre Digital", "Senha");
@@ -79,8 +79,8 @@ public class Classe1 {
             }
         } catch (InputMismatchException e) {
             System.out.println("O valor digitado tem que ser numérico: \n" + e);
-        }catch (IllegalArgumentException e){
-            System.out.println(e.getMessage()+ "\nIllegalArgumentException" );
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage() + "\nIllegalArgumentException");
         }
     }
 }
