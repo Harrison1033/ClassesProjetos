@@ -42,11 +42,14 @@ public class Classe1 {
     public static void main(String[] args) {
         // Lê o tipo de cofre (primeira linha da entrada)
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite se o cofre é fisico ou digital");
         String tipoCofre = scanner.nextLine();
 
         // TODO: Implemente a condição necessário para a verificação dos cofres seguros:
         if (tipoCofre.equalsIgnoreCase("digital")) {
+            System.out.println("Digite a senha do cofre: ");
             int senha = scanner.nextInt();
+            System.out.println("Confirme a senha do cofre: ");
             int confirmacaoSenha = scanner.nextInt();
             CofreDigital cofreDigital = new CofreDigital(senha);
             boolean senhaValida = cofreDigital.validarSenha(confirmacaoSenha);
