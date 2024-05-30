@@ -1,5 +1,7 @@
 package classes;
 //Desafio Bootcamp 05 (Cofres Seguros: Dominando o Encapsulamento e Abstração)
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 abstract class Cofre {
@@ -38,6 +40,7 @@ class CofreFisico extends Cofre {
     }
 
 }
+
 public class Classe1 {
     public static void main(String[] args) {
         // Lê o tipo de cofre (primeira linha da entrada)
@@ -45,28 +48,33 @@ public class Classe1 {
         System.out.println("Digite se o cofre é fisico ou digital");
         String tipoCofre = scanner.nextLine();
 
-        // TODO: Implemente a condição necessário para a verificação dos cofres seguros:
-        if (tipoCofre.equalsIgnoreCase("digital")) {
-            System.out.println("Digite a senha do cofre: ");
-            int senha = scanner.nextInt();
-            System.out.println("Confirme a senha do cofre: ");
-            int confirmacaoSenha = scanner.nextInt();
-            CofreDigital cofreDigital = new CofreDigital(senha);
-            boolean senhaValida = cofreDigital.validarSenha(confirmacaoSenha);
-            if (senhaValida){
-                System.out.println("""
-                        Tipo: Cofre Digital
-                        Metodo de abertura: Senha
-                        Cofre aberto!""");
-            }else {
-                System.out.println("""
-                        Tipo: Cofre Digital
-                        Metodo de abertura: Senha
-                        Senha incorreta!""");
+        //  Implemente a condição necessário para a verificação dos cofres seguros:
+        try {
+            if (tipoCofre.equalsIgnoreCase("digital")) {
+                System.out.println("Digite a senha do cofre: ");
+                int senha = scanner.nextInt();
+                System.out.println("Confirme a senha do cofre: ");
+                int confirmacaoSenha = scanner.nextInt();
+                CofreDigital cofreDigital = new CofreDigital(senha);
+                boolean senhaValida = cofreDigital.validarSenha(confirmacaoSenha);
+                if (senhaValida) {
+                    System.out.println("""
+                            Tipo: Cofre Digital
+                            Metodo de abertura: Senha
+                            Cofre aberto!""");
+                } else {
+                    System.out.println("""
+                            Tipo: Cofre Digital
+                            Metodo de abertura: Senha
+                            Senha incorreta!""");
+                }
+
+            } else {
+                System.out.println("Tipo: Cofre Fisico\n" + "Metodo de abertura: Chave");
             }
-        }else {
-            System.out.println("Tipo: Cofre Fisico\n" + "Metodo de abertura: Chave");
+        }catch (InputMismatchException e){
+            System.out.println("O valor digitado tem que ser numérico: \n" + e);
+        }
         }
     }
-}
 
