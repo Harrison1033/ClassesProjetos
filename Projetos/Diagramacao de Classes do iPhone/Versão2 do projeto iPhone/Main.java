@@ -3,6 +3,7 @@ package classes;
 import java.util.Scanner;
 
 //Projeto iPhone utilizando das classes de 2 a 5
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
