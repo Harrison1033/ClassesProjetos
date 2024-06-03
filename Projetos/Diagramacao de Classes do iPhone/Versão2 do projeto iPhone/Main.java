@@ -31,6 +31,7 @@ public class Main {
             } else {
                 System.out.println("Opção inválida: ");
             }
+			
             System.out.println("Gostaria de escolher outra opção? \n(0)\n(1)");
             opcao = scan.nextInt();
         }
