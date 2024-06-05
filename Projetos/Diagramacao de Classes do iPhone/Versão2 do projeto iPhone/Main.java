@@ -12,6 +12,7 @@ public class Main {
         int opcao = 0;
 		
         while (opcao == 0) {
+			
             System.out.println("Qual opção Gostaria de Utilizar?");
             System.out.println("(a) Reprodutor musical\n(b) Telefone\n(c) Internet");
             String escolha = scan.next();
