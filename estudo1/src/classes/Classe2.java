@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//Desafio Bootcamp 04
+//Desafio Bootcamp 04(Somente digitando informações solicitadas com tratamento de exceções)
 public class Classe2  {
     public static void main(String[] args) {
         // Lendo os dados de Entrada:
