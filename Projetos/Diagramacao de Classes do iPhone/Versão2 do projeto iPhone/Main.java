@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 		
         Scanner scan = new Scanner(System.in);
+		
         IPhone iPhone = new IPhone();
 		
         int opcao = 0;
