@@ -18,6 +18,7 @@ public class Main {
             System.out.println("Qual opção Gostaria de Utilizar?");
 			
             System.out.println("(a) Reprodutor musical\n(b) Telefone\n(c) Internet");
+			
             String escolha = scan.next();
 			
             if (escolha.equalsIgnoreCase("a")) {
