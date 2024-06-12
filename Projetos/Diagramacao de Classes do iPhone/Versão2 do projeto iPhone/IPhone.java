@@ -2,6 +2,7 @@ package classes;
 
 //iPhone
 public class IPone implements ReprodutorMusical, Telefone, Internete {
+	
     //Reprodutor de Músicas
     @Override
     public void tocar() {
