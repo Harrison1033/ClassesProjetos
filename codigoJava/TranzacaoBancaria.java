@@ -47,6 +47,7 @@ public class Main {
             //(.replaceAll("$[$]$", ""));)Tercho responsável por retirar os colchetes da impressão
             System.out.println((i + 1) + "." + transacoes.get(i).replaceAll("$[$]$", ""));
         }
+		
         // Fechar o scanner para evitar vazamentos de recursos
         scanner.close();
     }
