@@ -49,6 +49,7 @@ public class Main {
         }
 		
         // Fechar o scanner para evitar vazamentos de recursos
+		
         scanner.close();
     }
 
