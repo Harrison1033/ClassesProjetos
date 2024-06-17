@@ -28,6 +28,7 @@ public class Main {
             double valorTransacao = scanner.nextDouble();
 
             // Atualiza o saldo da conta e adicionar a transação à lista
+			
             if (tipoTransacao == 'D') {
                 saldo += valorTransacao;
                 transacoes.add("Deposito de " + valorTransacao);
