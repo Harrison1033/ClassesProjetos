@@ -24,6 +24,7 @@ public class Main {
             System.out.println("Digite (d) para escolher depósito e (s) para escoler saque: ");
             char tipoTransacao = scanner.next().toUpperCase().charAt(0);
             // Lê a Entrada com o valor da transação
+			
             System.out.println("Digite o valor a ser sacado ou depositado de acordo com as opções escolhidas: ");
             double valorTransacao = scanner.nextDouble();
 
