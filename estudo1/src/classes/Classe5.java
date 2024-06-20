@@ -11,6 +11,7 @@ public class Classe5 {
         // Lê a Entrada que informa o saldo inicial da conta
         System.out.println("Digite o valor inicial de depósito: ");
         double saldo = scanner.nextDouble();
+        
         // Lê a Entrada com a quantidade total de transações
         System.out.println("Digite a quantidade de tansações: ");
         int quantidadeTransacoes = scanner.nextInt();
