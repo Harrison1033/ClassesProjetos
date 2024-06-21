@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Classe5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         // Lê a Entrada que informa o saldo inicial da conta
         System.out.println("Digite o valor inicial de depósito: ");
         double saldo = scanner.nextDouble();
