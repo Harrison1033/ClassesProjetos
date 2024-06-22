@@ -16,6 +16,7 @@ public class Classe5 {
         // Lê a Entrada com a quantidade total de transações
         System.out.println("Digite a quantidade de tansações: ");
         int quantidadeTransacoes = scanner.nextInt();
+        
         // Lista para armazenar as transações
         List<String> transacoes = new ArrayList<>();
 
