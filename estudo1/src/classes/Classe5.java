@@ -3,7 +3,7 @@ package classes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//TODO:implementar um exception caso o saque seja maior que o valor da conta...
 //Desafio Bootcamp1 (Registro de Transações Bancárias)
 public class Classe5 {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Classe5 {
         // Lê a Entrada com a quantidade total de transações
         System.out.println("Digite a quantidade de tansações: ");
         int quantidadeTransacoes = scanner.nextInt();
-        
+
         // Lista para armazenar as transações
         List<String> transacoes = new ArrayList<>();
 
@@ -44,6 +44,7 @@ public class Classe5 {
         }
 
         // TODO: Exibir o saldo final e a lista de transações conforme a tabela de Exemplos.
+        
         System.out.println("Saldo: " + saldo);
         System.out.println("Transacoes:");
         for (int i = 0; i < quantidadeTransacoes; i++) {
