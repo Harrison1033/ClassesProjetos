@@ -47,6 +47,7 @@ public class Classe5 {
         
         System.out.println("Saldo: " + saldo);
         System.out.println("Transacoes:");
+        
         for (int i = 0; i < quantidadeTransacoes; i++) {
             //(.replaceAll("$[$]$", ""));)Tercho responsável por retirar os colchetes da impressão
             System.out.println((i + 1) + "." + transacoes.get(i).replaceAll("$[$]$", ""));
