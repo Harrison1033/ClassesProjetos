@@ -50,4 +50,5 @@ public class IPone implements ReprodutorMusical, Telefone, Internete {
     public void atualizarPagina() {
         System.out.println("Atualiza uma nova página: ");
     }
+	
 }
