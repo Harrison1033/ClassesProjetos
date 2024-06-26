@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 //TODO:implementar um exception caso o saque seja maior que o valor da conta...
+
 //Desafio Bootcamp1 (Registro de Transações Bancárias)
 public class Classe5 {
     public static void main(String[] args) {
