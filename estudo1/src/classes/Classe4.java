@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 public class Classe4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("Digite o Saldo inicial: ");
         double saldo = scanner.nextDouble();
         System.out.println("Digite a Quantia de transações: ");
