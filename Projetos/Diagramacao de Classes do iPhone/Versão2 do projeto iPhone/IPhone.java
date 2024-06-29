@@ -1,6 +1,6 @@
 package classes;
 
-//iPhone
+//iPhone2
 public class IPone implements ReprodutorMusical, Telefone, Internete {
 	
     //Reprodutor de Músicas
