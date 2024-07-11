@@ -12,6 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 // TODO: Inicialize um bloco try-catch para capturar exceções:
+
         try {
             // Leia a entrada do usuário como uma string representando o número da conta:
             String numeroConta = scanner.nextLine();
