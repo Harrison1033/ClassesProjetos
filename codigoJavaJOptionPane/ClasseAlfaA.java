@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class ClassA {
+public class ClassA {//Calculo de área e perímetro
     String aux;
     float largura, comprimento, area, perimetro;
 
