@@ -5,7 +5,7 @@ import java.util.Scanner;
 // ContaTermanl
 public class DadosConta {
 	
-        NomeCli nomeCli = new NomeCli();
+        NomeCli nomeCliente = new NomeCliente();
 		
         Scanner scan = new Scanner(System.in);
 		
@@ -14,12 +14,12 @@ public class DadosConta {
             int numero = scan.nextInt();
             System.out.println("Digite o número da  Agência!");
             String agencia = scan.next();
-            nomeCli.nome();
+            nomeCliente.nome();
             System.out.println("Digite o saldo da conta!");
             double saldo = scan.nextDouble();
             scan.close();
 
-            System.out.println("Olá " + nomeCli.getNomeCliente() + " obrigado por criar uma conta em nosso banco, sua agência é " + 
+            System.out.println("Olá " + nomeCliente.getNomeCliente() + " obrigado por criar uma conta em nosso banco, sua agência é " + 
 			agencia + " conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.");
         }
 

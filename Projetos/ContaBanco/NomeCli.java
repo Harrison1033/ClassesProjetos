@@ -2,15 +2,15 @@ package teste;
 
 import java.util.Scanner;
 
-public class NomeCli {
+public class NomeCliente {
     Scanner scan = new Scanner(System.in);
-    private String nomeCliente;
+    private String nomeClient;
     public void nome(){
         System.out.println("Por favor, digite o nome do cliente!");
-        nomeCliente = scan.nextLine();
+        nomeClient = scan.nextLine();
     }
 
-    public String getNomeCliente() {
-        return nomeCliente;
+    public String getNomeClient() {
+        return nomeClient;
     }
 }
