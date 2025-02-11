@@ -1,9 +1,6 @@
-package teste;
-
 import javax.swing.*;
 
-//Desafio de código(Contador)
-public class Main {
+public class ClassF {
     public static void main(String[] aargs) {
         String aux;
         aux = JOptionPane.showInputDialog("Digite o primeiro número");
