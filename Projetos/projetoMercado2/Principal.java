@@ -10,7 +10,7 @@ public class Principal {
 			boolean continua = true;
 			int opcao;
 			while(continua == true) {//resolver o problema abaixo
-			segundo.printOut();//quando reinicia o processo o valor não retorna a zero
+			segundo.imprimir();//quando reinicia o processo o valor não retorna a zero
 			System.out.println("Would you like to restarte the process?\n(1) Yes\n(2) No");
 			opcao = scan.nextInt();
 			if(opcao == 1) {

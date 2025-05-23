@@ -2,7 +2,7 @@ package teste;
 
 import java.util.Scanner;
 
-public class NomeCliente {
+class NomeCliente {
     Scanner scan = new Scanner(System.in);
     private String nomeClient;
     public void nome(){

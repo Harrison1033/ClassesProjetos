@@ -1,28 +1,20 @@
-import javax.swing.*;
-
+import java.util.Scanner;
 public class ClassF {
-    public static void main(String[] aargs) {
-        String aux;
-        aux = JOptionPane.showInputDialog("Digite o primeiro número");
-        int numero1 = Integer.parseInt(aux);
-        aux = JOptionPane.showInputDialog("Digite o segundo número");
-        int numero2 = Integer.parseInt(aux);
-        try {
-            if (numero1 > numero2) {
-                //A exceção IllegalArgumentException é usada para indicar que o segundo número deve ser maior que o primeiro.
-                throw new IllegalArgumentException("O segundo número deve ser maior que o primeiro.");
-            }
-            contar(numero1, numero2);
-        } catch (IllegalArgumentException e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    static void contar(int numero1, int numero2) {
-        //O loop for é usado para imprimir os números entre numero1 e numero2.
-        for (int i = numero1; i < numero2; i++) {
-            JOptionPane.showMessageDialog(null, i);
+        double saldo = scanner.nextDouble();
+
+        // TODO: Implemente a classificação do cliente com base no saldo:
+        if (saldo < 0){
+            System.out.println("Negativado");
+        }else if (saldo >= 0 && saldo <= 500 ){
+            System.out.println("Baixo");
+        }else {
+            System.out.println("Confortavel");
         }
-        System.exit(0);
+
+
+        scanner.close();
     }
 }

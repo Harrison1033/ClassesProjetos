@@ -9,7 +9,7 @@ public class ClasseAa {//soma de valores e quantidade de produtos
 	protected double value2 = 0;
 	protected double result;
 	
-	public void printOut() {
+	public void imprimir() {
 		while (true) {
 			System.out.println("Enter the product value");
 			value1 = scan.nextDouble();
