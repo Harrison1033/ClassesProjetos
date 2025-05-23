@@ -2,23 +2,31 @@
 .idea/
 *.iml
 
-# Compilados Java
-*.class
+# Build outputs (compilados)
 out/
 **/out/
-
-# Maven / Gradle
 target/
 build/
 
-# Logs e temporários
+# Java class files
+*.class
+
+# Logs
 *.log
 
-# Arquivos do sistema
-.DS_Store
-Thumbs.db
-
-# Bibliotecas empacotadas
+# Pacotes empacotados
 *.jar
 *.war
 *.ear
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Outros arquivos de IDE/editor
+.vscode/
+*.swp
