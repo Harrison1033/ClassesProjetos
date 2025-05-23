@@ -1,11 +1,11 @@
-//Adivinhar um número aleatório 
+//Adivinhar um número aleatório
 
 package bk.com.harrison.classes;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ClasseA4 {
+public class Aleatorio {
     Scanner scan = new Scanner(System.in);
     Random numero = new Random();
     int resp;
