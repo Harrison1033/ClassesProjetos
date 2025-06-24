@@ -53,7 +53,7 @@ public abstract class Zombie {
         // Lógica de perseguição ao jogador (movimento baseado na posição do player)
         if (x < player.getX()) {
             nextX += speed;
-            lastDirection = 1; // direita
+            lastDirection = 2; // direita
         }
         if (x > player.getX()) {
             nextX -= speed;
@@ -65,7 +65,7 @@ public abstract class Zombie {
         }
         if (y > player.getY()) {
             nextY -= speed;
-            lastDirection = 2; // cima
+            lastDirection = 1; // cima
         }
 
         // Verifica colisão com obstáculos antes de mover
